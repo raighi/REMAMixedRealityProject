@@ -34,14 +34,26 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -49,6 +61,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -266,7 +284,9 @@
           },
           {
             "name": "LineRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -430,7 +450,9 @@
           },
           {
             "name": "SkinnedMeshRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -442,7 +464,9 @@
           },
           {
             "name": "SortingGroup",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -989,16 +1013,16 @@
           },
           {
             "name": "CharacterController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Rapha\u00EBlScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Collider",
-            "scenes": [
-              "Assets/Scenes/Rapha\u00EBlScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {

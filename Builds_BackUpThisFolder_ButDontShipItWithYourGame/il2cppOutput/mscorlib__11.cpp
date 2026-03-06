@@ -25407,7 +25407,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DF
 		return L_0;
 	}
 }
-// Method Definition Index: 8437
+// Method Definition Index: 8438
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ValueTaskAwaiter_get_IsCompleted_m91A22F2D04E2154E443BEED30D65ED57D2F516D7_inline (ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25424,7 +25424,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ValueTaskAwaiter_get_IsCompl
 		return L_1;
 	}
 }
-// Method Definition Index: 8438
+// Method Definition Index: 8439
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValueTaskAwaiter_GetResult_mBBB0A3A59DE0066AAB1A73785D40CB3E62CB8EDD_inline (ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25550,7 +25550,7 @@ IL_000e:
 		return L_8;
 	}
 }
-// Method Definition Index: 11761
+// Method Definition Index: 11763
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ArrayPool_1_t3CE8332C9DFE03FF160AB0CE0FF17DF7792E0E4B* ArrayPool_1_get_Shared_m8EB88B4EDF81135B55DB0F33A749B8087FE4646F_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -25575,7 +25575,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Span_1_get_Length_m8E944E
 		return L_0;
 	}
 }
-// Method Definition Index: 11761
+// Method Definition Index: 11763
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ArrayPool_1_t645A9854926DCA747C654687A362AD03D55D2C07* ArrayPool_1_get_Shared_m59AE954C801963CBE5E506D9378429032D161C97_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -25977,7 +25977,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueTaskAwaiter_1_t1C9A07171B9A0
 		return L_1;
 	}
 }
-// Method Definition Index: 8446
+// Method Definition Index: 8447
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ValueTaskAwaiter_1_get_IsCompleted_mF76102991BCDB7D90EA7F015117932F5CD0F16A5_gshared_inline (ValueTaskAwaiter_1_t1C9A07171B9A06106B5B2C67A0C0ADD0FD79A814* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25987,7 +25987,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ValueTaskAwaiter_1_get_IsCom
 		return L_1;
 	}
 }
-// Method Definition Index: 8447
+// Method Definition Index: 8448
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ValueTaskAwaiter_1_GetResult_m1CDBD76C7751CF4495B899C2D46E29C0E1E380DF_gshared_inline (ValueTaskAwaiter_1_t1C9A07171B9A06106B5B2C67A0C0ADD0FD79A814* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26264,7 +26264,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Span_1__ctor_m947BF95D54571B
 		return;
 	}
 }
-// Method Definition Index: 8445
+// Method Definition Index: 8446
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValueTaskAwaiter_1__ctor_m7A9C6C3CA09F648DF0CD8455F98DEA43F001BC75_gshared_inline (ValueTaskAwaiter_1_t1C9A07171B9A06106B5B2C67A0C0ADD0FD79A814* __this, ValueTask_1_t823DE87C36EA952D24C4E64F532E9D4425B72F21 ___0_value, const RuntimeMethod* method) 
 {
 	{

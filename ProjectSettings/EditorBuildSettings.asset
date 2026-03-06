@@ -12,6 +12,8 @@ EditorBuildSettings:
     path: "Assets/Scenes/Rapha\xEBlScene.unity"
     guid: 9c0d7c322c8bbb34aa78211f239273bb
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 34d50037755b3004380a297d82545b5d, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2db8a51e0c0e34d44bdd373ade36b928, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b619dec207e9cea43b25a577233b9491, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ad2e975d8a7b44042a8473ca54f3714c, type: 2}
