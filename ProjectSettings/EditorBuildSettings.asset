@@ -5,10 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: "Assets/Scenes/Rapha\xEBlScene.unity"
+    guid: 9c0d7c322c8bbb34aa78211f239273bb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b619dec207e9cea43b25a577233b9491, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ad2e975d8a7b44042a8473ca54f3714c, type: 2}
   m_UseUCBPForAssetBundles: 0
