@@ -36,6 +36,9 @@
 
 .vscode/
 
+
+.RemaApp.snlx/
+.RemaApp.snlx
 # Gradle cache directory
 .gradle/
 
