@@ -33,6 +33,7 @@ extern void XRInteractionSimulatorInputFeedbackUI__ctor_mE50D4F39784B6F6D83B1345
 extern void XRInteractionSimulatorInputFeedbackUI__cctor_m10AE547EE4B8369881A6A2CBE761BFC82DF74270 (void);
 extern void XRInteractionSimulatorPlayModeMenu_Start_mB748D5E22A312AD164FFF992BAED833351FD87B2 (void);
 extern void XRInteractionSimulatorPlayModeMenu_CheckInputModalityManager_mE7E9221255226F7280FDC3D515CDEF08F127CC23 (void);
+extern void XRInteractionSimulatorPlayModeMenu_CheckHandVisualizer_mAA7F7989D66CDD888DE4F1947480DDA75D3B84A9 (void);
 extern void XRInteractionSimulatorPlayModeMenu_InitializeQuickActionPanels_mD8CBE8EEDA390B8D3A71B7E426E09E1D90567603 (void);
 extern void XRInteractionSimulatorPlayModeMenu_InitializeControllerQuickActionPanels_m6748EFB8D63669A0F1FB08D0FE24EC4438E1B19F (void);
 extern void XRInteractionSimulatorPlayModeMenu_InitializeHandQuickActionPanels_m10F9019295D101833F531A58FFB51BCA4AD0FABF (void);
@@ -49,7 +50,7 @@ extern void XRInteractionSimulatorPlayModeMenu_HandleHighlightedHandActionPanels
 extern void XRInteractionSimulatorPlayModeMenu_ClearHighlightedDevicePanels_m71FC44914FB0FEADCFD97154508307CDA3B832F2 (void);
 extern void XRInteractionSimulatorPlayModeMenu__ctor_m6AE36B240C61DBCD5C555848D9AD5D709B11BE83 (void);
 extern void XRInteractionSimulatorPlayModeMenu__cctor_mF85BEFD0A8F5A57E82182C2048F9B928C8864365 (void);
-static Il2CppMethodPointer s_methodPointers[42] = 
+static Il2CppMethodPointer s_methodPointers[43] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m9BEC3FB6803F48D2B21D6986179A04E1EC6FF7A2,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m8FBBD252A41DC3429C6720B8E0BB4D629F8FD795,
@@ -77,6 +78,7 @@ static Il2CppMethodPointer s_methodPointers[42] =
 	XRInteractionSimulatorInputFeedbackUI__cctor_m10AE547EE4B8369881A6A2CBE761BFC82DF74270,
 	XRInteractionSimulatorPlayModeMenu_Start_mB748D5E22A312AD164FFF992BAED833351FD87B2,
 	XRInteractionSimulatorPlayModeMenu_CheckInputModalityManager_mE7E9221255226F7280FDC3D515CDEF08F127CC23,
+	XRInteractionSimulatorPlayModeMenu_CheckHandVisualizer_mAA7F7989D66CDD888DE4F1947480DDA75D3B84A9,
 	XRInteractionSimulatorPlayModeMenu_InitializeQuickActionPanels_mD8CBE8EEDA390B8D3A71B7E426E09E1D90567603,
 	XRInteractionSimulatorPlayModeMenu_InitializeControllerQuickActionPanels_m6748EFB8D63669A0F1FB08D0FE24EC4438E1B19F,
 	XRInteractionSimulatorPlayModeMenu_InitializeHandQuickActionPanels_m10F9019295D101833F531A58FFB51BCA4AD0FABF,
@@ -94,56 +96,57 @@ static Il2CppMethodPointer s_methodPointers[42] =
 	XRInteractionSimulatorPlayModeMenu__ctor_m6AE36B240C61DBCD5C555848D9AD5D709B11BE83,
 	XRInteractionSimulatorPlayModeMenu__cctor_mF85BEFD0A8F5A57E82182C2048F9B928C8864365,
 };
-static const int32_t s_InvokerIndices[42] = 
+static const int32_t s_InvokerIndices[43] = 
 {
-	35900,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	8431,
-	21505,
-	21505,
-	21505,
-	21505,
-	16137,
-	16137,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	35813,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	3835,
-	33830,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	21505,
-	35813,
+	37906,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	8873,
+	22697,
+	22697,
+	22697,
+	22697,
+	17024,
+	17024,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	37802,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	3987,
+	35762,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	22697,
+	37802,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_InteractionSimulator_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_InteractionSimulator_CodeGenModule = 
 {
 	"Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.dll",
-	42,
+	43,
 	s_methodPointers,
 	0,
 	NULL,
