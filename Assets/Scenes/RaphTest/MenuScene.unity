@@ -452,6 +452,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3271184211846393660, guid: 2e4a97b83ace6f54ba2fcf95bc064b7c, type: 3}
+      propertyPath: arPlayerPrefab
+      value: 
+      objectReference: {fileID: 1255484363539689268, guid: 79ffd95a28c46c040ab6d608342628bc, type: 3}
+    - target: {fileID: 3271184211846393660, guid: 2e4a97b83ace6f54ba2fcf95bc064b7c, type: 3}
+      propertyPath: vrPlayerPrefab
+      value: 
+      objectReference: {fileID: 241224347463928695, guid: 73f355df2a612de49a82664c7b05136c, type: 3}
     - target: {fileID: 3416581940170250577, guid: 2e4a97b83ace6f54ba2fcf95bc064b7c, type: 3}
       propertyPath: m_Name
       value: GameManager
