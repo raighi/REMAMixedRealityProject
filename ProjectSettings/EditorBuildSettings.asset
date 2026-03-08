@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Rapha\xEBlScene.unity"
     guid: 9c0d7c322c8bbb34aa78211f239273bb
+  - enabled: 1
+    path: Assets/Scenes/RaphTest/MenuScene.unity
+    guid: 353d55b2899a92d478dc1c110cea1f71
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 34d50037755b3004380a297d82545b5d, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2db8a51e0c0e34d44bdd373ade36b928, type: 2}
