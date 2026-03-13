@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8477261228461890212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2764e7af2a38c4f44bc147f184a57dc5, type: 3}
+  m_Name: ARFaceFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARFaceFeature
+  m_enabled: 0
+  nameUi: 'Android XR: AR Face'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-face
+  openxrExtensionStrings: XR_ANDROID_eye_tracking XR_ANDROID_face_tracking
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-8228559681529028913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +110,28 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-7709454747159704807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9968a003be3847388ac9899285499b9d, type: 3}
+  m_Name: ARSessionFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARSessionFeature
+  m_enabled: 0
+  nameUi: 'Android XR: AR Session'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-session
+  openxrExtensionStrings: 
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-7495471901217033240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,8 +214,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
   - {fileID: 6800201131419299134}
+  - {fileID: 6280601528622344215}
+  - {fileID: 3411572018041507807}
   - {fileID: 1972340601546067199}
+  - {fileID: 2450986838513786686}
+  - {fileID: 2607255932228615119}
+  - {fileID: -8477261228461890212}
   - {fileID: -7495471901217033240}
+  - {fileID: -4136477317277145642}
+  - {fileID: -3545266552884626425}
+  - {fileID: -7709454747159704807}
+  - {fileID: -560639731902209806}
+  - {fileID: 5690604850844449769}
   - {fileID: -1284974469107997772}
   - {fileID: 6327392917195944685}
   - {fileID: 6982846929143062909}
@@ -635,6 +689,28 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-4136477317277145642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067e06965349e46e2adeba1822c4a125, type: 3}
+  m_Name: ARPlaneFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARPlaneFeature
+  m_enabled: 0
+  nameUi: 'Android XR: AR Plane'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-plane
+  openxrExtensionStrings: XR_ANDROID_trackables
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-4027765063756223160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +1049,28 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-560639731902209806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74906b43825373045a3ab2660f8002b4, type: 3}
+  m_Name: DisplayUtilitiesFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.DisplayUtilitiesFeature
+  m_enabled: 0
+  nameUi: 'Android XR: Display Utilities'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-display-utilities
+  openxrExtensionStrings: XR_FB_display_refresh_rate
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-103031259514649791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,7 +1263,7 @@ MonoBehaviour:
   nameUi: 'Android XR: AR Anchor'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-anchor
-  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_device_anchor_persistence
+  openxrExtensionStrings: XR_ANDROID_trackables
   company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
@@ -1187,7 +1285,7 @@ MonoBehaviour:
   nameUi: 'Android XR: AR Anchor'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-anchor
-  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_device_anchor_persistence
+  openxrExtensionStrings: XR_ANDROID_trackables
   company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
@@ -1211,6 +1309,50 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.input.handinteractionposes
   openxrExtensionStrings: XR_EXT_hand_interaction
   company: Unity
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+--- !u!114 &2450986838513786686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b3b4b0645b644019bbe43c77a897b6, type: 3}
+  m_Name: ARBoundingBoxFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARBoundingBoxFeature
+  m_enabled: 0
+  nameUi: 'Android XR: AR Bounding Box'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-bounding-box
+  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_trackables_object
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+--- !u!114 &2607255932228615119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ede4ee691b4974a870a100d7d3ad30, type: 3}
+  m_Name: ARCameraFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.ARCameraFeature
+  m_enabled: 0
+  nameUi: 'Android XR: AR Camera'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-camera
+  openxrExtensionStrings: XR_ANDROID_passthrough_camera_state XR_ANDROID_light_estimation
+  company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
   required: 0
@@ -1281,6 +1423,31 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &3411572018041507807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae1e8c3c7a542bba339faf2e771c5a, type: 3}
+  m_Name: AndroidXRSupportFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRSupportFeature
+  m_enabled: 0
+  nameUi: Android XR Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-support
+  openxrExtensionStrings: 
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+  symmetricProjection: 0
+  optimizeBufferDiscards: 1
+  multiviewRenderRegionsOptimizationMode: 0
 --- !u!114 &3697173727229399058
 MonoBehaviour:
   m_ObjectHideFlags: 0
