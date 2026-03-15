@@ -8,12 +8,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GameScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Rapha\xEBlScene.unity"
     guid: 9c0d7c322c8bbb34aa78211f239273bb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RaphTest/MenuScene.unity
     guid: 353d55b2899a92d478dc1c110cea1f71
+  - enabled: 0
+    path: Assets/Scenes/RaphTest/TestRelay+tuto.unity
+    guid: 58f115c6a95052c44a5d0c7c43725499
+  - enabled: 0
+    path: Assets/Scenes/RaphTest/LobbyTest3.unity
+    guid: 6e006958cfc029442ac6a02842046014
+  - enabled: 0
+    path: "Assets/Scenes/RaphTest/Rapha\xEBlScene.unity"
+    guid: cdc6558eff925034d9243a281ceab5e7
+  - enabled: 1
+    path: Assets/Scenes/RaphTest/TestRelay+tuto 1.unity
+    guid: 6d3909d7c33e75f4bb3595c942a397d2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 34d50037755b3004380a297d82545b5d, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2db8a51e0c0e34d44bdd373ade36b928, type: 2}
