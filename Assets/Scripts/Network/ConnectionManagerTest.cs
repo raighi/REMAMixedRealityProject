@@ -6,13 +6,13 @@ using Unity.Services.Core;
 using Unity.Services.Multiplayer;
 using UnityEngine;
 
-public class ConnectionManager : MonoBehaviour
+public class ConnectionManagerTest : MonoBehaviour
 {
     private NetworkManager networkManager;
     private ConnectionService service;
     private ConnectionModel model;
 
-    public ConnectionManager(NetworkManager networkManager, ConnectionService service, ConnectionModel model)
+    public ConnectionManagerTest(NetworkManager networkManager, ConnectionService service, ConnectionModel model)
     {
         this.networkManager = networkManager;
         this.service = service;

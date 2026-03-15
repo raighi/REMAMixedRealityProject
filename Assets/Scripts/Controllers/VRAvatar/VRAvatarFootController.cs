@@ -3,6 +3,8 @@ using UnityEngine;
 public class VRAvatarFootController : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private Transform LeftFoot;
+    [SerializeField] private Transform RightFoot;
 
     [SerializeField] [Range(0, 1)] private float leftFootPosWeight;
     [SerializeField] [Range(0, 1)] private float rightFootPosWeight;
@@ -17,8 +19,8 @@ public class VRAvatarFootController : MonoBehaviour
 
     private void OnAnimatorIK(int layerIndex)
     {
-        Vector3 leftFootPos = this.animator.GetIKPosition(AvatarIKGoal.LeftFoot);
-        Vector3 rightFootPos = this.animator.GetIKPosition(AvatarIKGoal.RightFoot);
+        Vector3 leftFootPos = LeftFoot.position;
+        Vector3 rightFootPos = RightFoot.position;
 
         Debug.Log("Left Foot: " + leftFootPos);
         Debug.Log("Right Foot: " + rightFootPos);

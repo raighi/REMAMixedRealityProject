@@ -27,6 +27,6 @@ public class MixedRealityBootstrapper : MonoBehaviour
         ConnectionService connectionService = new ConnectionService();
 
         // Injecting the Controllers
-        this.connectionManager = new ConnectionManager(networkManager, connectionService, connectionModel);
+        //this.connectionManager = new ConnectionManager(networkManager, connectionService, connectionModel);
     }
 }
