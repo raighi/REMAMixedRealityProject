@@ -38,6 +38,12 @@ extern void VRPlayerController___initializeVariables_m70B984BA30EEA4562920ABC80A
 extern void VRPlayerController___initializeRpcs_m91EB197053861C8905F451A28B9A116E1202FF44 (void);
 extern void VRPlayerController___rpc_handler_3809992547_m094D5588ACAE977ED2F0FAAAE54B2B1763C2040A (void);
 extern void VRPlayerController___getTypeName_m35E02310B741AE90F306916DA0B2D9658EF34B53 (void);
+extern void HandleVisualFeedback_Start_m77904EBE2931A49E2971E616B1E9A178AB4F698C (void);
+extern void HandleVisualFeedback_OnHoverEnter_m0E2D568E8A68EB197CB6474EA3C656F0EBB3C8CE (void);
+extern void HandleVisualFeedback_OnHoverExit_m7659EAE9B42EF9AF94A82FEB9A0C14DD0FE07631 (void);
+extern void HandleVisualFeedback_OnSelectEnter_m89D98D3806BB4329045CCB116877A25B8AF1D31C (void);
+extern void HandleVisualFeedback_OnSelectExit_m7230F6706A7B2E73CCD1E62708F9A9F167E53FCE (void);
+extern void HandleVisualFeedback__ctor_m8C5E1AC3E94127C25D7C7632709715F87EED4DCF (void);
 extern void SharedSpatialAnchor_SetAnchorFromAR_mBFF9FBF40FE7E47D49BEC2CF029CEF885CBEED47 (void);
 extern void SharedSpatialAnchor_Update_mCCC7B0C681392B7DB74A467DF1012F0243348875 (void);
 extern void SharedSpatialAnchor__ctor_mDAB9B8D87DC4B56EF240E0711F7C5D5A95213CAD (void);
@@ -102,7 +108,7 @@ extern void CalibrationManager_Calibrate_m36EA0A5FF7334A14AF6C06CBC2C63786121903
 extern void CalibrationManager_CheckParameters_mD5759116DBD4833813855FA4826566B5313B8048 (void);
 extern void CalibrationManager__ctor_m953A009882962E543F23849BC15773D69EF0AC5C (void);
 extern void NetworkVariableSerializationHelper_InitializeSerialization_mA4F17C9D8F4934C552263003358AF8CC0E55E6E3 (void);
-static Il2CppMethodPointer s_methodPointers[95] = 
+static Il2CppMethodPointer s_methodPointers[101] = 
 {
 	MouseCamLook_Start_m0CE26867CD828A1CBB413712934BEC98E3B2733C,
 	MouseCamLook_Update_m23878426B4D0D0E665CE2748EC3ECBFFF27B6875,
@@ -135,6 +141,12 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	VRPlayerController___initializeRpcs_m91EB197053861C8905F451A28B9A116E1202FF44,
 	VRPlayerController___rpc_handler_3809992547_m094D5588ACAE977ED2F0FAAAE54B2B1763C2040A,
 	VRPlayerController___getTypeName_m35E02310B741AE90F306916DA0B2D9658EF34B53,
+	HandleVisualFeedback_Start_m77904EBE2931A49E2971E616B1E9A178AB4F698C,
+	HandleVisualFeedback_OnHoverEnter_m0E2D568E8A68EB197CB6474EA3C656F0EBB3C8CE,
+	HandleVisualFeedback_OnHoverExit_m7659EAE9B42EF9AF94A82FEB9A0C14DD0FE07631,
+	HandleVisualFeedback_OnSelectEnter_m89D98D3806BB4329045CCB116877A25B8AF1D31C,
+	HandleVisualFeedback_OnSelectExit_m7230F6706A7B2E73CCD1E62708F9A9F167E53FCE,
+	HandleVisualFeedback__ctor_m8C5E1AC3E94127C25D7C7632709715F87EED4DCF,
 	SharedSpatialAnchor_SetAnchorFromAR_mBFF9FBF40FE7E47D49BEC2CF029CEF885CBEED47,
 	SharedSpatialAnchor_Update_mCCC7B0C681392B7DB74A467DF1012F0243348875,
 	SharedSpatialAnchor__ctor_mDAB9B8D87DC4B56EF240E0711F7C5D5A95213CAD,
@@ -206,12 +218,12 @@ extern void U3CCreateOrJoinSessionAsyncU3Ed__12_MoveNext_m8CAF413E8A0412F4C2C2C4
 extern void U3CCreateOrJoinSessionAsyncU3Ed__12_SetStateMachine_mF697326D613FE1D1CEA85B946FDCC2F9FA7978B0_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x0600002D, U3CAwakeU3Ed__7_MoveNext_m15FB9D78ADE5FC56C387ABAF499A37E2E5277861_AdjustorThunk },
-	{ 0x0600002E, U3CAwakeU3Ed__7_SetStateMachine_m5D6A860D0562F089BEC03BB13F7F40BD9BE9BE76_AdjustorThunk },
-	{ 0x0600002F, U3CCreateOrJoinSessionAsyncU3Ed__12_MoveNext_m8CAF413E8A0412F4C2C2C4AB22D212C9D21A177B_AdjustorThunk },
-	{ 0x06000030, U3CCreateOrJoinSessionAsyncU3Ed__12_SetStateMachine_mF697326D613FE1D1CEA85B946FDCC2F9FA7978B0_AdjustorThunk },
+	{ 0x06000033, U3CAwakeU3Ed__7_MoveNext_m15FB9D78ADE5FC56C387ABAF499A37E2E5277861_AdjustorThunk },
+	{ 0x06000034, U3CAwakeU3Ed__7_SetStateMachine_m5D6A860D0562F089BEC03BB13F7F40BD9BE9BE76_AdjustorThunk },
+	{ 0x06000035, U3CCreateOrJoinSessionAsyncU3Ed__12_MoveNext_m8CAF413E8A0412F4C2C2C4AB22D212C9D21A177B_AdjustorThunk },
+	{ 0x06000036, U3CCreateOrJoinSessionAsyncU3Ed__12_SetStateMachine_mF697326D613FE1D1CEA85B946FDCC2F9FA7978B0_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[95] = 
+static const int32_t s_InvokerIndices[101] = 
 {
 	22706,
 	22706,
@@ -244,6 +256,12 @@ static const int32_t s_InvokerIndices[95] =
 	22706,
 	29021,
 	22452,
+	22706,
+	22706,
+	22706,
+	22706,
+	22706,
+	22706,
 	17314,
 	22706,
 	22706,
@@ -313,7 +331,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	95,
+	101,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
