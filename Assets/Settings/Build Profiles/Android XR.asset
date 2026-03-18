@@ -23,9 +23,7 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/RaphTest/VRScene.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/LucaScene.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/RaphTest/ScenePrincipale.unity
+    m_path: Assets/Scenes/RaphTest/TESTCO+VR.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
