@@ -389,6 +389,14 @@ public class VRConnectionManager : MonoBehaviour
 
             _session = await MultiplayerService.Instance.CreateOrJoinSessionAsync(sessionName, options);
             _state = ConnectionState.Connected;
+            if (m_NetworkManager.LocalClient != null && m_NetworkManager.LocalClient.IsSessionOwner)
+                {
+                    var status = m_NetworkManager.SceneManager.LoadScene("TESTCO+VR", UnityEngine.SceneManagement.LoadSceneMode.Single);
+                    if (status != SceneEventProgressStatus.Started)
+                    {
+                        Debug.LogWarning($"[ConnectionManager] Scene load failed: {status}");
+                    }
+                }
 
             Debug.Log($"[VR] Joined session '{sessionName}' as '{profileName}'");
         }

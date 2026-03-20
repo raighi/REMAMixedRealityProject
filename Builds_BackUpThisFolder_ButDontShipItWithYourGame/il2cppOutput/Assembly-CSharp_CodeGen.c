@@ -118,6 +118,10 @@ extern void CursorDriver__ctor_mDACDD397E3B232536A72A8A305424F0EB56638E3 (void);
 extern void CursorDriver___initializeVariables_mC795396085AEE3926F09CC2F52D41E4FC7A0A01E (void);
 extern void CursorDriver___initializeRpcs_mBA19C263C0FC3AA587EB601CA9BBBF9742D04CE6 (void);
 extern void CursorDriver___getTypeName_m4A437312162237767CB2E0A997FF06454EE8B6D7 (void);
+extern void NetworkedInteractionTool__ctor_m0AE8F6E172213C778DE285AAA3088D4D190E3DDA (void);
+extern void NetworkedInteractionTool___initializeVariables_m249C855C9121429D060E6DEC639B47AC83B5C05C (void);
+extern void NetworkedInteractionTool___initializeRpcs_mE7162F502E4CB0F59AE8EC9BABC3F5B207FA89B7 (void);
+extern void NetworkedInteractionTool___getTypeName_mF479D7021981B14BEBABA30833CD400DB037683F (void);
 extern void PlayerController_CatchCamera_m47015B7EF9ED11F304F464F4F81D028E32B10043 (void);
 extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
 extern void PlayerController_OnNetworkSpawn_mFB4C929B89206453F1B0CCF28A0160E42D672965 (void);
@@ -189,7 +193,7 @@ extern void CalibrationManager_Calibrate_m36EA0A5FF7334A14AF6C06CBC2C63786121903
 extern void CalibrationManager_CheckParameters_mD5759116DBD4833813855FA4826566B5313B8048 (void);
 extern void CalibrationManager__ctor_m953A009882962E543F23849BC15773D69EF0AC5C (void);
 extern void NetworkVariableSerializationHelper_InitializeSerialization_mA4F17C9D8F4934C552263003358AF8CC0E55E6E3 (void);
-static Il2CppMethodPointer s_methodPointers[182] = 
+static Il2CppMethodPointer s_methodPointers[186] = 
 {
 	MouseCamLook_Start_m0CE26867CD828A1CBB413712934BEC98E3B2733C,
 	MouseCamLook_Update_m23878426B4D0D0E665CE2748EC3ECBFFF27B6875,
@@ -302,6 +306,10 @@ static Il2CppMethodPointer s_methodPointers[182] =
 	CursorDriver___initializeVariables_mC795396085AEE3926F09CC2F52D41E4FC7A0A01E,
 	CursorDriver___initializeRpcs_mBA19C263C0FC3AA587EB601CA9BBBF9742D04CE6,
 	CursorDriver___getTypeName_m4A437312162237767CB2E0A997FF06454EE8B6D7,
+	NetworkedInteractionTool__ctor_m0AE8F6E172213C778DE285AAA3088D4D190E3DDA,
+	NetworkedInteractionTool___initializeVariables_m249C855C9121429D060E6DEC639B47AC83B5C05C,
+	NetworkedInteractionTool___initializeRpcs_mE7162F502E4CB0F59AE8EC9BABC3F5B207FA89B7,
+	NetworkedInteractionTool___getTypeName_mF479D7021981B14BEBABA30833CD400DB037683F,
 	PlayerController_CatchCamera_m47015B7EF9ED11F304F464F4F81D028E32B10043,
 	PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF,
 	PlayerController_OnNetworkSpawn_mFB4C929B89206453F1B0CCF28A0160E42D672965,
@@ -392,12 +400,12 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[10] =
 	{ 0x06000067, U3CAwakeU3Ed__12_SetStateMachine_m6EAE197EFE8064AD77B00EFB2719DBFDB22A1493_AdjustorThunk },
 	{ 0x06000068, U3CCreateOrJoinSessionAsyncU3Ed__23_MoveNext_mEC7803D17C9084D5BF3DBE30707F6952BD8552D0_AdjustorThunk },
 	{ 0x06000069, U3CCreateOrJoinSessionAsyncU3Ed__23_SetStateMachine_m1B40917B7D7351270629C2118BAF0DE316D80159_AdjustorThunk },
-	{ 0x06000093, U3CAwakeU3Ed__13_MoveNext_m311D1D02EA9CDC0CCD4F7C70EC0E8DAD31E92836_AdjustorThunk },
-	{ 0x06000094, U3CAwakeU3Ed__13_SetStateMachine_mEF944D404E1A42A4FA773666F85A4001A7D66E4C_AdjustorThunk },
-	{ 0x06000095, U3CCreateOrJoinSessionAsyncU3Ed__27_MoveNext_m44677C2B58F843DEFF3442486B6516C0B96EAE56_AdjustorThunk },
-	{ 0x06000096, U3CCreateOrJoinSessionAsyncU3Ed__27_SetStateMachine_m6A9140DCB7E9871D7503A2DFDAB3B5F4E9216067_AdjustorThunk },
+	{ 0x06000097, U3CAwakeU3Ed__13_MoveNext_m311D1D02EA9CDC0CCD4F7C70EC0E8DAD31E92836_AdjustorThunk },
+	{ 0x06000098, U3CAwakeU3Ed__13_SetStateMachine_mEF944D404E1A42A4FA773666F85A4001A7D66E4C_AdjustorThunk },
+	{ 0x06000099, U3CCreateOrJoinSessionAsyncU3Ed__27_MoveNext_m44677C2B58F843DEFF3442486B6516C0B96EAE56_AdjustorThunk },
+	{ 0x0600009A, U3CCreateOrJoinSessionAsyncU3Ed__27_SetStateMachine_m6A9140DCB7E9871D7503A2DFDAB3B5F4E9216067_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[182] = 
+static const int32_t s_InvokerIndices[186] = 
 {
 	23047,
 	23047,
@@ -513,6 +521,10 @@ static const int32_t s_InvokerIndices[182] =
 	23047,
 	23047,
 	23047,
+	22782,
+	23047,
+	23047,
+	23047,
 	23047,
 	23047,
 	23047,
@@ -586,7 +598,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	182,
+	186,
 	s_methodPointers,
 	10,
 	s_adjustorThunks,

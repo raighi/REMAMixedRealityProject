@@ -21,9 +21,9 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
-    m_path: Assets/Scenes/RaphTest/VRScene.unity
+    m_path: Assets/Scenes/VRScene.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/RaphTest/TESTCO+VR.unity
+    m_path: Assets/Scenes/TESTCO+VR.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -175,6 +175,14 @@ MonoBehaviour:
     - line: '|   preloadedAssets:'
     - line: '|   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b,
         type: 3}'
+    - line: '|   - {fileID: 11400000, guid: b619dec207e9cea43b25a577233b9491, type:
+        2}'
+    - line: '|   - {fileID: -7298569144277623332, guid: ad2e975d8a7b44042a8473ca54f3714c,
+        type: 2}'
+    - line: '|   - {fileID: 11400000, guid: 34d50037755b3004380a297d82545b5d, type:
+        2}'
+    - line: '|   - {fileID: 7772406534313727482, guid: 08d60c6d7d7e6634f90d04b6caa6ddb4,
+        type: 2}'
     - line: '|   metroInputSource: 0'
     - line: '|   wsaTransparentSwapchain: 0'
     - line: '|   m_HolographicPauseOnTrackingLoss: 1'
@@ -1001,7 +1009,7 @@ MonoBehaviour:
         m_ExportAsGoogleAndroidProject: 0
         m_DebugSymbolLevel: 1
         m_DebugSymbolFormat: 5
-        m_CurrentDeploymentTargetId: __builtin__target_default
+        m_CurrentDeploymentTargetId: 1WMHH86J5L1264
         m_BuildType: 2
         m_LinkTimeOptimization: 0
         m_BuildAppBundle: 0
