@@ -17,6 +17,7 @@ using UnityEngine.XR.Interaction.Toolkit.UI;
 /// - Builds a World Space UI compatible with XR Ray Interactors
 /// - Exposes a public JoinSession(profile, session) method
 ///   that an XR Interactable can trigger directly.
+/// - Spawns VR player AFTER the shared scene is fully loaded.
 /// </summary>
 public class VRConnectionManager : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class VRConnectionManager : MonoBehaviour
     private Button _connectButton;
     private TextMeshProUGUI _statusText;
 
+    private bool _hasSpawned = false;
+
     protected enum ConnectionState { Disconnected, Connecting, Connected }
 
     // ─────────────────────────────────────────
@@ -60,18 +63,11 @@ public class VRConnectionManager : MonoBehaviour
     // Public API — called by XR Interactable
     // ─────────────────────────────────────────
 
-    /// <summary>
-    /// Quick join: uses default profile and session names.
-    /// Attach this to an XR Simple Interactable's OnSelectEntered event.
-    /// </summary>
     public void JoinSessionQuick()
     {
         _ = CreateOrJoinSessionAsync(_defaultProfileName, _defaultSessionName);
     }
 
-    /// <summary>
-    /// Join with explicit profile and session names (e.g. from UI fields).
-    /// </summary>
     public void JoinSession(string profileName, string sessionName)
     {
         _ = CreateOrJoinSessionAsync(profileName, sessionName);
@@ -88,14 +84,12 @@ public class VRConnectionManager : MonoBehaviour
         var canvas = _canvasGO.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.WorldSpace;
 
-        // Position devant le joueur
         _canvasGO.transform.position = new Vector3(0, 1.6f, 2f);
         _canvasGO.transform.localScale = Vector3.one * 0.002f;
 
         var rt = _canvasGO.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(600, 400);
 
-        // XR-compatible raycaster (replaces GraphicRaycaster)
         _canvasGO.AddComponent<TrackedDeviceGraphicRaycaster>();
 
         // ── EventSystem with XR UI Input Module ──
@@ -103,7 +97,6 @@ public class VRConnectionManager : MonoBehaviour
         {
             var esGO = new GameObject("EventSystem");
             esGO.AddComponent<EventSystem>();
-            // XRUIInputModule handles both XR ray interactors and tracked devices
             esGO.AddComponent<XRUIInputModule>();
         }
 
@@ -114,7 +107,6 @@ public class VRConnectionManager : MonoBehaviour
         _profileInput = CreateInputField(panel, "Profile Name", 0);
         _sessionInput = CreateInputField(panel, "Session Name", 1);
 
-        // Pre-fill with defaults
         _profileInput.text = _defaultProfileName;
         _sessionInput.text = _defaultSessionName;
 
@@ -132,7 +124,7 @@ public class VRConnectionManager : MonoBehaviour
     }
 
     // ─────────────────────────────────────────
-    // UI Helpers (same structure as ConnectionManager)
+    // UI Helpers
     // ─────────────────────────────────────────
 
     private GameObject CreatePanel(GameObject parent)
@@ -175,7 +167,6 @@ public class VRConnectionManager : MonoBehaviour
 
         var inputField = go.AddComponent<TMP_InputField>();
 
-        // Text Area
         var textArea = new GameObject("Text Area");
         textArea.transform.SetParent(go.transform, false);
         var taRT = textArea.AddComponent<RectTransform>();
@@ -185,7 +176,6 @@ public class VRConnectionManager : MonoBehaviour
         taRT.offsetMax = new Vector2(-10, -5);
         textArea.AddComponent<RectMask2D>();
 
-        // Placeholder
         var phGO = new GameObject("Placeholder");
         phGO.transform.SetParent(textArea.transform, false);
         var phRT = phGO.AddComponent<RectTransform>();
@@ -198,7 +188,6 @@ public class VRConnectionManager : MonoBehaviour
         phText.fontSize  = 28;
         phText.alignment = TextAlignmentOptions.MidlineLeft;
 
-        // Text
         var txtGO = new GameObject("Text");
         txtGO.transform.SetParent(textArea.transform, false);
         var txtRT = txtGO.AddComponent<RectTransform>();
@@ -299,7 +288,6 @@ public class VRConnectionManager : MonoBehaviour
             UpdateUI();
         }
 
-        // Reposition canvas in front of VR camera
         if (_canvasGO != null && _canvasGO.activeSelf)
         {
             var cam = Camera.main;
@@ -327,8 +315,25 @@ public class VRConnectionManager : MonoBehaviour
     {
         if (m_NetworkManager.LocalClientId == clientId)
         {
-            Debug.Log($"[VR] Client-{clientId} connected to shared world.");
+            Debug.Log($"[VR] Client-{clientId} connected — waiting for scene load before spawning.");
+            // S'abonner aux événements de scène (SceneManager disponible après connexion)
+            m_NetworkManager.SceneManager.OnSceneEvent += OnSceneEvent;
+        }
+    }
+
+    // ─────────────────────────────────────────
+    // Scene Event — Spawn VR player AFTER scene is loaded
+    // ─────────────────────────────────────────
+
+    private void OnSceneEvent(SceneEvent sceneEvent)
+    {
+        if (sceneEvent.SceneEventType == SceneEventType.LoadEventCompleted
+            && sceneEvent.SceneName == "TESTCO+VR")
+        {
+            Debug.Log("[VR] TESTCO+VR fully loaded — spawning VR player now.");
             SpawnVRPlayer();
+            // Se désabonner pour éviter un double spawn
+            m_NetworkManager.SceneManager.OnSceneEvent -= OnSceneEvent;
         }
     }
 
@@ -338,19 +343,46 @@ public class VRConnectionManager : MonoBehaviour
 
     private void SpawnVRPlayer()
     {
+        if (_hasSpawned)
+        {
+            Debug.LogWarning("[VR] Already spawned — skipping.");
+            return;
+        }
+
         if (_vrPlayerPrefab == null)
         {
             Debug.LogWarning("[VR] No VR Player prefab assigned — skipping spawn.");
             return;
         }
 
-        // In Distributed Authority, each client can spawn its own objects
         var player = Instantiate(_vrPlayerPrefab, Vector3.zero, Quaternion.identity);
         var netObj = player.GetComponent<NetworkObject>();
         if (netObj != null)
         {
             netObj.SpawnWithOwnership(m_NetworkManager.LocalClientId);
+            _hasSpawned = true;
             Debug.Log($"[VR] Spawned VRPlayer for client {m_NetworkManager.LocalClientId}");
+        }
+    }
+    private void ReclaimCamera()
+    {
+        foreach (var cam in FindObjectsByType<Camera>(FindObjectsSortMode.None))
+        {
+            cam.enabled = false;
+            var listener = cam.GetComponent<AudioListener>();
+            if (listener != null) listener.enabled = false;
+        }
+
+        var xrOrigin = FindFirstObjectByType<Unity.XR.CoreUtils.XROrigin>();
+        if (xrOrigin != null && xrOrigin.Camera != null)
+        {
+            xrOrigin.Camera.enabled = true;
+            xrOrigin.Camera.tag = "MainCamera";
+            
+            var listener = xrOrigin.Camera.GetComponent<AudioListener>();
+            if (listener != null) listener.enabled = true;
+            
+            Debug.Log("[VR] Camera reclaimed");
         }
     }
 
@@ -360,6 +392,9 @@ public class VRConnectionManager : MonoBehaviour
         {
             m_NetworkManager.OnClientConnectedCallback -= OnClientConnectedCallback;
             m_NetworkManager.OnSessionOwnerPromoted -= OnSessionOwnerPromoted;
+
+            if (m_NetworkManager.SceneManager != null)
+                m_NetworkManager.SceneManager.OnSceneEvent -= OnSceneEvent;
         }
         _session?.LeaveAsync();
     }
@@ -389,14 +424,15 @@ public class VRConnectionManager : MonoBehaviour
 
             _session = await MultiplayerService.Instance.CreateOrJoinSessionAsync(sessionName, options);
             _state = ConnectionState.Connected;
+
             if (m_NetworkManager.LocalClient != null && m_NetworkManager.LocalClient.IsSessionOwner)
+            {
+                var status = m_NetworkManager.SceneManager.LoadScene("TESTCO+VR", UnityEngine.SceneManagement.LoadSceneMode.Single);
+                if (status != SceneEventProgressStatus.Started)
                 {
-                    var status = m_NetworkManager.SceneManager.LoadScene("TESTCO+VR", UnityEngine.SceneManagement.LoadSceneMode.Single);
-                    if (status != SceneEventProgressStatus.Started)
-                    {
-                        Debug.LogWarning($"[ConnectionManager] Scene load failed: {status}");
-                    }
+                    Debug.LogWarning($"[VRConnectionManager] Scene load failed: {status}");
                 }
+            }
 
             Debug.Log($"[VR] Joined session '{sessionName}' as '{profileName}'");
         }
