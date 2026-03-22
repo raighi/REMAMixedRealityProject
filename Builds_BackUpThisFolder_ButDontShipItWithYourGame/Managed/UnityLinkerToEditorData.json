@@ -347,7 +347,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/RaphTest/LobbyScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -361,7 +362,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/RaphTest/LobbyScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -1009,13 +1011,17 @@
         "dependencies": [
           {
             "name": "ParticleSystem",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "ParticleSystemRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           }
@@ -1080,13 +1086,18 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "SphereCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

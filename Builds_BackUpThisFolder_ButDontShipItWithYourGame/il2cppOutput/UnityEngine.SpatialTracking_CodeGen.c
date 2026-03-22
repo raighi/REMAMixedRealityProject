@@ -128,12 +128,12 @@ static const int32_t s_InvokerIndices[41] =
 	23047,
 	23047,
 	4321,
-	15177,
+	15176,
 	22530,
 	23047,
 	23047,
-	14088,
-	12263,
+	14087,
+	12262,
 	23047,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SpatialTracking_CodeGenModule;

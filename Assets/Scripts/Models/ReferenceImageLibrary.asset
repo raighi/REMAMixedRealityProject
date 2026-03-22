@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 5434976431489452262
+  m_GuidHigh: 7670334221762310847
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5516822350505143903
+      m_GuidHigh: 17009262487925957766
+    m_SerializedTextureGuid:
+      m_GuidLow: 14637847724701516199
+      m_GuidHigh: 6458237682746207003
+    m_Size: {x: 4.5, y: 4.529126}
+    m_SpecifySize: 1
+    m_Name: Marker_07
+    m_Texture: {fileID: 0}

@@ -39,14 +39,14 @@ static const int32_t s_InvokerIndices[12] =
 	4167,
 	23047,
 	22782,
-	15078,
+	15077,
 	23047,
 	4107,
 	4107,
 	4107,
 	23047,
 	22782,
-	15078,
+	15077,
 	23047,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_Services_Core_Telemetry_CodeGenModule;

@@ -330,6 +330,9 @@ GameObject:
   - component: {fileID: 6426463913843737257}
   - component: {fileID: 553644335834257539}
   - component: {fileID: 6136338948456835439}
+  - component: {fileID: 9075563360280240831}
+  - component: {fileID: 1617267177901910952}
+  - component: {fileID: 5914450890513427493}
   m_Layer: 0
   m_Name: ARPlayerPrefabDef
   m_TagString: Untagged
@@ -431,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 269521723
+  GlobalObjectIdHash: 1829610264
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -509,6 +512,54 @@ MonoBehaviour:
   arSession: {fileID: 2960056999513795715}
   arCameraManager: {fileID: 7267224758501467750}
   arCameraBackground: {fileID: 1852174607816471678}
+--- !u!114 &9075563360280240831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474367725775669280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARTrackedImageManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SerializedLibrary: {fileID: 11400000, guid: 62d7081806a620846b15ed5d969c77a2, type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 1616951613758677521, guid: 7111ea6ffd0fee640902592515c54ca1, type: 3}
+--- !u!114 &1617267177901910952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474367725775669280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67f35e88cab53746962534fbf1b21c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NetworkCalibrationTrigger
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!114 &5914450890513427493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474367725775669280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fea97bace09ee54cbb5f75240eff84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fr.ImtAtlantique.CEXIHA.Core.CalibrationManager
+  objectToCalibrate: {fileID: 0}
+  poseToAlign: {fileID: 0}
+  referencePose: {fileID: 0}
+  continuousCalibration: 0
+  showLogWarning: 0
 --- !u!1 &3658623604173555646
 GameObject:
   m_ObjectHideFlags: 0
