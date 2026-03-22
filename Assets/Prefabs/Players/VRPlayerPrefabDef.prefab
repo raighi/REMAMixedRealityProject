@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 1050232857162210185}
   - component: {fileID: 7728788313615105518}
   m_Layer: 2
-  m_Name: TESTPlayer
+  m_Name: VRPlayerPrefabDef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
