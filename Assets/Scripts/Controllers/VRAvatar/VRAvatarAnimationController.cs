@@ -23,7 +23,7 @@ public class VRAvatarAnimationController : MonoBehaviour
     {
         bool isWalkingFoward = this.move.action.ReadValue<Vector2>().y > 0;
 
-        if(isWalkingFoward )
+        if(isWalkingFoward)
         {
             this.animator.SetBool("isMoving", true);
             this.animator.SetFloat("animSpeed", 5.0f);
