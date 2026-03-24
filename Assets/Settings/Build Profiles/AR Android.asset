@@ -20,14 +20,10 @@ MonoBehaviour:
     rid: 2310956987498365121
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 0
-    m_path: Assets/Scenes/RaphTest/MenuScene.unity
-  - m_enabled: 0
-    m_path: Assets/Scenes/RaphTest/LobbyAR.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/RaphTest/TestRelay+tuto 1.unity
-  - m_enabled: 0
-    m_path: Assets/Scenes/RaphTest/TestRelay+tuto.unity
+    m_path: Assets/Scenes/RaphTest/LobbyScene.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/RaphTest/TESTCO+VR.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
