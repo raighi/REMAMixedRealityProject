@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PremierTest
   m_EditorClassIdentifier: Assembly-CSharp::TextSequence
   messages:
-  - siccvqsoinvdsdoivdnjdsvqekqlncvvbdjvbvjdsvbjdqdjvbqldjdvjbqldqvbsdsvsljbsdvdjvbsdsvb
-  - afekevljjcvgelvgggvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-  - skvnslkjkvnsjdjbbhbhsbodjhbsouisvghdbffffffffffffffffffffffffffffffffffffffffffffffffffffffzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-  - fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-  - kndvsjvbqfepiqehpqo<sjfhpqsqsdhzgpigehdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+  - "Si vous voyez le texte suivant c'est parce que vous avez pos\xE9 le prefab du
+    background sans cr\xE9er de TextSequence adapt\xE9."
+  - 'Pour cela, faire Create->Text->TextSequence. '
+  - Editer le ensuite avec l'inspecteur.
+  - Enfin ajouter votre TextSequence dans le bootstrapper du background.

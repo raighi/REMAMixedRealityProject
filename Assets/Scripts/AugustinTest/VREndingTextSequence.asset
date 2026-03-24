@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6db81419d7a1b4da3a28b9900e9faa, type: 3}
+  m_Name: VREndingTextSequence
+  m_EditorClassIdentifier: Assembly-CSharp::TextSequence
+  messages:
+  - "Vous ouvrez enfin la porte de sortie et la lumi\xE8re du soleil vous \xE9blouit.\r\nVous
+    ignorez encore qui \xE9tait r\xE9ellement l\u2019esprit qui vous a guid\xE9,
+    mais vous savez que vous ne l\u2019oublierez jamais.\r\n"
+  - "Pour l\u2019instant, une seule chose compte : vous \xEAtes vivant, et vous \xEAtes
+    libre."
+  - "F\xE9licitations ! Vous avez termin\xE9 notre exp\xE9rience de r\xE9alit\xE9
+    mixte avanc\xE9e et r\xE9solu toutes les \xE9nigmes du donjon.\r\nPourquoi ne
+    pas recommencer l\u2019aventure en \xE9changeant les r\xF4les ?"
