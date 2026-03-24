@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AR Camera
   - VR Camera
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

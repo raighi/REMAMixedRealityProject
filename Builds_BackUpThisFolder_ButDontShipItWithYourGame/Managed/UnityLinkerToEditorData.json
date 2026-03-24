@@ -19,8 +19,8 @@
           {
             "name": "NavMeshSettings",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -37,7 +37,7 @@
           {
             "name": "AnimationClip",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -45,7 +45,7 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -53,7 +53,7 @@
           {
             "name": "AnimatorController",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -95,8 +95,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -110,8 +109,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -166,8 +164,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -187,8 +184,8 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -208,8 +205,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -223,8 +220,8 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -238,14 +235,6 @@
           {
             "name": "GraphicsSettings",
             "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "Halo",
-            "scenes": [
-              "Assets/Scenes/LucaScene.unity"
-            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -264,8 +253,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -273,8 +262,7 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -300,8 +288,8 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -309,7 +297,7 @@
           {
             "name": "LineRenderer",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -323,8 +311,8 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -332,8 +320,8 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -341,8 +329,8 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -350,8 +338,8 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -359,8 +347,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -374,8 +361,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -383,8 +369,8 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -422,7 +408,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -436,8 +422,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -469,8 +455,8 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -484,7 +470,7 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -498,7 +484,7 @@
           {
             "name": "SortingGroup",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -506,7 +492,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1040,22 +1026,22 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "CharacterController",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1081,8 +1067,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/LucaScene.unity",
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1553,7 +1538,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1596,7 +1581,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1610,7 +1595,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/RaphTest/VRScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
             ],
             "dependencyType": 0,
             "icon": null

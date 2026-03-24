@@ -9,7 +9,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
-using UnityEngine.InputSystem;
 
 public class ConnectionManager : MonoBehaviour
 {
@@ -312,6 +311,12 @@ public class ConnectionManager : MonoBehaviour
 
             _session = await MultiplayerService.Instance.CreateOrJoinSessionAsync(_sessionName, options);
             _state = ConnectionState.Connected;
+
+            var status = m_NetworkManager.SceneManager.LoadScene("TESTCO+VR", UnityEngine.SceneManagement.LoadSceneMode.Single);
+                if (status != SceneEventProgressStatus.Started)
+                {
+                    Debug.LogWarning($"[VRConnectionManager] Scene load failed: {status}");
+                }
         }
         catch (Exception e)
         {
