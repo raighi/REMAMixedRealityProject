@@ -793,6 +793,18 @@ struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3
 {
 	uint8_t ___m_value;
 };
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 
+{
+	bool ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_pinvoke
+{
+	int32_t ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_com
+{
+	int32_t ___IsUnlocked;
+};
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
 	float ___r;
@@ -41671,6 +41683,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* UnsafeUtility_AddressOf_TisByte_t94D923
 {
 	{
 		uint8_t* L_0 = ___0_output;
+		return (void*)(L_0);
+	}
+}
+// Method Definition Index: 50354
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* UnsafeUtility_AddressOf_TisCodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_m96B759A1535DD617D6F3DEC820043D6BA94DA8DB_gshared (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_output, const RuntimeMethod* method) 
+{
+	{
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_0 = ___0_output;
 		return (void*)(L_0);
 	}
 }

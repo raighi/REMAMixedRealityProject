@@ -446,6 +446,7 @@ struct ConnectionSlot_t37FAC4A786F0CC30B58ECE2BD80477617DC98A33;
 struct ConnectionSlot_t424336CC957E4448CD318AF4AFB3360AD64144E3;
 struct ConnectionSlot_tC0124B98FB257C2891FA55F734034FCCFE3377F4;
 struct ConnectionSlot_tB4CAAD06D82027332DB93AF6BC08243A57FE4AF2;
+struct DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2;
 struct DuplicateValueDelegate_tE5F8FD025548480C44EE4726D21939240E01675F;
 struct DuplicateValueDelegate_t8FA6548AFEF4BBABDB80F5B194AC55A910163F90;
 struct HashMapHelper_1_t51F726D16732CD16EFBBB3DE324B481A05388D2B;
@@ -487,11 +488,13 @@ struct List_1_t91E36549D76184780FD8995722CD4A87A2650C23;
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 struct List_1_tE5211AFE92BF26309D7C5814A29544E9EF496FE4;
 struct ObjectPool_1_t1BF53E631D2563ED2CFA4ED38919CC939FA2951C;
+struct ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464;
 struct ReadDeltaDelegate_t394205B4B3DD24FBCD28B90B0DEEAE7A58BDFF72;
 struct ReadDeltaDelegate_t66069FB3B82C204169A08CD77423C6E4954276EE;
 struct ReadOnlyList_1_t244E981B7F12C148DF7683BC3C84250378EE757E;
 struct ReadOnlyList_1_tF544680ED3DBD1DC70C3157ACD89C08CE7EC37E0;
 struct ReadOnlyList_1_t11A7E2B2381E52652C09E41FC8CEBB0675A2E801;
+struct ReadValueDelegate_t285E947B4B22A084C8E6C2A7E5471A7D27AEFAF7;
 struct ReadValueDelegate_tACE0D05C498650D470964A0AEAAE50AECE4D6EB4;
 struct ReadValueDelegate_t68FA0058056DAE7F5E22D194E7735E9C8901CD25;
 struct Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A;
@@ -545,6 +548,7 @@ struct UnityObjectReferenceCache_1_t35965401EF254BCC089B920E471F929867F63919;
 struct UnityObjectReferenceCache_2_tDDA23E8D68929712BE24F100B89ED0291001D0DB;
 struct UnmanagedArraySerializer_1_tBF159525A94F0E1F3182392F60E1BCB0901967EF;
 struct UnmanagedNetworkSerializableArraySerializer_1_tFF7D0115BBE28EC85F03AF6C563D8033E8036C6E;
+struct UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6;
 struct UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44;
 struct UnmanagedNetworkSerializableSerializer_1_tC0B315F6DC08948EB705CAF87274110711BAE4D1;
 struct UnmanagedTypeSerializer_1_t340ACC20A59D5E5F41735EABAF99E556861443B2;
@@ -562,8 +566,10 @@ struct UnsafeList_1_t920EEA6A1B2E9F33EB313E95EA12E527BEE9B3D9;
 struct UnsafeList_1_tAA9B4088AD983FB4435266FFDB9BAA6F142EAC19;
 struct UnsafeList_1_tF062DD1BCBB62BEC18F3CA54F2BFA91EE544F763;
 struct UnsafeList_1_t434504A1800B1FDBD803A3FF34A3A18F4490E1FE;
+struct WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B;
 struct WriteDeltaDelegate_t4AEDE558F9D0813450B5FC3DEBBECDEDBC9DB4A2;
 struct WriteDeltaDelegate_t1B466A4DBF47837F06A99828184228698B5494A9;
+struct WriteValueDelegate_tCA4FD7A50342016CB18FE97585C4F6679ED1271E;
 struct WriteValueDelegate_t9512B8C642763F17B3501A9430AE1C63CDA1DB19;
 struct WriteValueDelegate_t137EC670F798A130DD23B7281445B8FBE474BB26;
 struct Pair_2U5BU5D_tA93C79DD20E7E202CC93D8B5B7C60A312699AA16;
@@ -714,6 +720,9 @@ struct UnmanagedArraySerializer_1_tBF159525A94F0E1F3182392F60E1BCB0901967EF  : p
 struct UnmanagedNetworkSerializableArraySerializer_1_tFF7D0115BBE28EC85F03AF6C563D8033E8036C6E  : public RuntimeObject
 {
 };
+struct UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6  : public RuntimeObject
+{
+};
 struct UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44  : public RuntimeObject
 {
 };
@@ -733,6 +742,9 @@ struct UnmanagedTypeSerializer_1_t69DD7E9600C9A66C0DF104A237F57B7D385E5526  : pu
 {
 };
 struct UnsafeGenericPool_1_t2DE9F6698A85490A25C7D73126F5118D1221736B  : public RuntimeObject
+{
+};
+struct UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510  : public RuntimeObject
 {
 };
 struct UserNetworkVariableSerialization_1_t47AEE04B66FFB7AD4F748ACF5F0377AE3B657B86  : public RuntimeObject
@@ -1146,6 +1158,18 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
 {
 	uint8_t ___m_value;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 
+{
+	bool ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_pinvoke
+{
+	int32_t ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_com
+{
+	int32_t ___IsUnlocked;
 };
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
@@ -2069,6 +2093,9 @@ struct NativeKeyValueArrays_2_t97DEBC72840B73CFCEE6195C4C495C675E96FAF1
 	NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 ___Keys;
 	NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 ___Values;
 };
+struct ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464  : public MulticastDelegate_t
+{
+};
 struct ReadDeltaDelegate_t394205B4B3DD24FBCD28B90B0DEEAE7A58BDFF72  : public MulticastDelegate_t
 {
 };
@@ -2150,6 +2177,9 @@ struct UnityAction_3_t63FCFB2F4A79E45F22B316176EBC03C84C95F6A6  : public Multica
 struct UnityAction_4_tCEC521CB7790823B607EC80F0967B286600D4FB8  : public MulticastDelegate_t
 {
 };
+struct WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B  : public MulticastDelegate_t
+{
+};
 struct WriteDeltaDelegate_t4AEDE558F9D0813450B5FC3DEBBECDEDBC9DB4A2  : public MulticastDelegate_t
 {
 };
@@ -2217,6 +2247,14 @@ struct List_1_tE5211AFE92BF26309D7C5814A29544E9EF496FE4_StaticFields
 struct UnsafeGenericPool_1_t2DE9F6698A85490A25C7D73126F5118D1221736B_StaticFields
 {
 	ObjectPool_1_t1BF53E631D2563ED2CFA4ED38919CC939FA2951C* ___s_Pool;
+};
+struct UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields
+{
+	WriteValueDelegate_tCA4FD7A50342016CB18FE97585C4F6679ED1271E* ___WriteValue;
+	ReadValueDelegate_t285E947B4B22A084C8E6C2A7E5471A7D27AEFAF7* ___ReadValue;
+	WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* ___WriteDelta;
+	ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* ___ReadDelta;
+	DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* ___DuplicateValue;
 };
 struct UserNetworkVariableSerialization_1_t47AEE04B66FFB7AD4F748ACF5F0377AE3B657B86_StaticFields
 {
@@ -2506,8 +2544,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedArray_1_Dispose_m6633B12AACEBE5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MemoryBlock_t83C4AD217E04686899AC67FBD8D14A7C9AAC6E84* UnmanagedArray_1_GetUnsafePointer_m629F4CC29D4DD5CE8A0E7D3C3642C1D92EB5D656_gshared (UnmanagedArray_1_t7A336330780E05C924BB57ED337DDD2A66701FAB* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MemoryBlock_t83C4AD217E04686899AC67FBD8D14A7C9AAC6E84* UnmanagedArray_1_get_Item_mE315B3406730DD2D42AF15133B69737FF041A160_gshared_inline (UnmanagedArray_1_t7A336330780E05C924BB57ED337DDD2A66701FAB* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_gshared_inline (BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0* __this, BufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4 ___0_implementation, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635_gshared (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeLockState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_m4832D6548161C72F817D0F75CA7EE52BADCFC8D9_gshared (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_gshared_inline (BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B* __this, BufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091 ___0_implementation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodeLockState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m75CCE695E03BA0ED9F14CC4158DBF9A83E02FF60_gshared (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* __this, BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B ___0_serializer, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WriteDeltaDelegate_Invoke_m924349AF62CB2D9839D8B6982DB5F6003AE2FC62_gshared_inline (WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___2_previousValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Write_m200A01765B58B58CE211F594791C7391C14107D5_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReadDeltaDelegate_Invoke_m56817E30376D6E8E8A2197B6157444CF4513F4A7_gshared_inline (ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Read_mE124016C349EEFC34ED9BDFF0CC35D062EFEEC89_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Duplicate_mAEA588353496E9EEA45154D36D7005FB622C36B2_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635_gshared (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m52BCAB82D106AD3A0153B9BB94E05FCFC3A3D958_gshared (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B ___0_serializer, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WriteDeltaDelegate_Invoke_m9FA7912977A7D81CC4676294A960C3473119B94A_gshared_inline (WriteDeltaDelegate_t4AEDE558F9D0813450B5FC3DEBBECDEDBC9DB4A2* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___1_value, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___2_previousValue, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Write_m395377B6825DCCFE2D9FEBAAB23D9F0BFE5A1D48_gshared (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___1_value, const RuntimeMethod* method) ;
@@ -3335,14 +3380,43 @@ inline void BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_i
 {
 	((  void (*) (BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0*, BufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4, const RuntimeMethod*))BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_gshared_inline)(__this, ___0_implementation, method);
 }
-inline void GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635 (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method)
+inline void CodeLockState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_m4832D6548161C72F817D0F75CA7EE52BADCFC8D9 (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method)
 {
-	((  void (*) (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B*, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0, const RuntimeMethod*))GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635_gshared)(__this, ___0_serializer, method);
+	((  void (*) (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0, const RuntimeMethod*))CodeLockState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_m4832D6548161C72F817D0F75CA7EE52BADCFC8D9_gshared)(__this, ___0_serializer, method);
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BufferSerializerReader__ctor_m07FF131328D126C35784F8AEA1DE0AD0E9082022_inline (BufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, const RuntimeMethod* method) ;
 inline void BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_inline (BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B* __this, BufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091 ___0_implementation, const RuntimeMethod* method)
 {
 	((  void (*) (BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B*, BufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091, const RuntimeMethod*))BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_gshared_inline)(__this, ___0_implementation, method);
+}
+inline void CodeLockState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m75CCE695E03BA0ED9F14CC4158DBF9A83E02FF60 (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* __this, BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B ___0_serializer, const RuntimeMethod* method)
+{
+	((  void (*) (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B, const RuntimeMethod*))CodeLockState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m75CCE695E03BA0ED9F14CC4158DBF9A83E02FF60_gshared)(__this, ___0_serializer, method);
+}
+inline void WriteDeltaDelegate_Invoke_m924349AF62CB2D9839D8B6982DB5F6003AE2FC62_inline (WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___2_previousValue, const RuntimeMethod* method)
+{
+	((  void (*) (WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B*, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*))WriteDeltaDelegate_Invoke_m924349AF62CB2D9839D8B6982DB5F6003AE2FC62_gshared_inline)(__this, ___0_writer, ___1_value, ___2_previousValue, method);
+}
+inline void UnmanagedNetworkSerializableSerializer_1_Write_m200A01765B58B58CE211F594791C7391C14107D5 (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6*, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1_Write_m200A01765B58B58CE211F594791C7391C14107D5_gshared)(__this, ___0_writer, ___1_value, method);
+}
+inline void ReadDeltaDelegate_Invoke_m56817E30376D6E8E8A2197B6157444CF4513F4A7_inline (ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*))ReadDeltaDelegate_Invoke_m56817E30376D6E8E8A2197B6157444CF4513F4A7_gshared_inline)(__this, ___0_reader, ___1_value, method);
+}
+inline void UnmanagedNetworkSerializableSerializer_1_Read_mE124016C349EEFC34ED9BDFF0CC35D062EFEEC89 (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1_Read_mE124016C349EEFC34ED9BDFF0CC35D062EFEEC89_gshared)(__this, ___0_reader, ___1_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* __this, const RuntimeMethod* method) ;
+inline void UnmanagedNetworkSerializableSerializer_1_Duplicate_mAEA588353496E9EEA45154D36D7005FB622C36B2 (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method)
+{
+	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1_Duplicate_mAEA588353496E9EEA45154D36D7005FB622C36B2_gshared)(__this, ___0_value, ___1_duplicatedValue, method);
+}
+inline void GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635 (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 ___0_serializer, const RuntimeMethod* method)
+{
+	((  void (*) (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B*, BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0, const RuntimeMethod*))GrabState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_mB5D9F7FCB30B0481A7EC1CDB73E7D0D16833F635_gshared)(__this, ___0_serializer, method);
 }
 inline void GrabState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m52BCAB82D106AD3A0153B9BB94E05FCFC3A3D958 (GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* __this, BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B ___0_serializer, const RuntimeMethod* method)
 {
@@ -3364,7 +3438,6 @@ inline void UnmanagedNetworkSerializableSerializer_1_Read_m6DCECC824C130BECB4894
 {
 	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1_Read_m6DCECC824C130BECB4894CC3500DAC9D384B6801_gshared)(__this, ___0_reader, ___1_value, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* __this, const RuntimeMethod* method) ;
 inline void UnmanagedNetworkSerializableSerializer_1_Duplicate_mCF829FFA00255E0DF83D05C0E1AC3102FDB325E2 (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44* __this, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___0_value, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___1_duplicatedValue, const RuntimeMethod* method)
 {
 	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44*, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B*, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1_Duplicate_mCF829FFA00255E0DF83D05C0E1AC3102FDB325E2_gshared)(__this, ___0_value, ___1_duplicatedValue, method);
@@ -13209,6 +13282,186 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableArraySeriali
 		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18* L_0 = ___0_value;
 		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18* L_1 = ___1_duplicatedValue;
 		((  void (*) (UnmanagedNetworkSerializableArraySerializer_1_tFF7D0115BBE28EC85F03AF6C563D8033E8036C6E*, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 13)))(__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86559
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Write_m200A01765B58B58CE211F594791C7391C14107D5_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:905>
+		FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC L_0 = ___0_writer;
+		BufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4 L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		BufferSerializerWriter__ctor_m01EDEBA96595E3137D5FA84A730ED2828319F040_inline((&L_1), L_0, NULL);
+		BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_inline((&V_0), L_1, BufferSerializer_1__ctor_mDECE9F91F23D83973143B9CD7C78990BCA43AEA3_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:906>
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_2 = ___1_value;
+		BufferSerializer_1_tB07CC05C8821999D2912FC2880FC1CAF4094FEF0 L_3 = V_0;
+		CodeLockState_NetworkSerialize_TisBufferSerializerWriter_t3F287564BDCF264BABBB18BF4D541A95238FBFD4_m4832D6548161C72F817D0F75CA7EE52BADCFC8D9(L_2, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:907>
+		return;
+	}
+}
+// Method Definition Index: 86560
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Read_mE124016C349EEFC34ED9BDFF0CC35D062EFEEC89_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:911>
+		FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 L_0 = ___0_reader;
+		BufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091 L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		BufferSerializerReader__ctor_m07FF131328D126C35784F8AEA1DE0AD0E9082022_inline((&L_1), L_0, NULL);
+		BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_inline((&V_0), L_1, BufferSerializer_1__ctor_m6E4B9D10380FD59BA79777CD8D53F28CA609DBDB_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:912>
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_2 = ___1_value;
+		BufferSerializer_1_t8B54D07A3EDD3D37E1369C511353FC3344A0FF3B L_3 = V_0;
+		CodeLockState_NetworkSerialize_TisBufferSerializerReader_t821F6D93FEA6652401EA14C2C96FB7328355A091_m75CCE695E03BA0ED9F14CC4158DBF9A83E02FF60(L_2, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 3));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:913>
+		return;
+	}
+}
+// Method Definition Index: 86561
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_WriteDelta_mA590487F6FD7E46C951D0E44A5924BABFD7EAACC_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___2_previousValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:917>
+		WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* L_0 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___WriteDelta;
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* L_1 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___ReadDelta;
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:919>
+		WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* L_2 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___WriteDelta;
+		FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC L_3 = ___0_writer;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_4 = ___1_value;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_5 = ___2_previousValue;
+		NullCheck(L_2);
+		WriteDeltaDelegate_Invoke_m924349AF62CB2D9839D8B6982DB5F6003AE2FC62_inline(L_2, L_3, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:920>
+		return;
+	}
+
+IL_001c:
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:923>
+		FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC L_6 = ___0_writer;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_7 = ___1_value;
+		UnmanagedNetworkSerializableSerializer_1_Write_m200A01765B58B58CE211F594791C7391C14107D5(__this, L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:924>
+		return;
+	}
+}
+// Method Definition Index: 86562
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_ReadDelta_mC9B6088F7C69368D5B386CAF17EAF672034A2E2E_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:928>
+		WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* L_0 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___WriteDelta;
+		if (!L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* L_1 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___ReadDelta;
+		if (!L_1)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:930>
+		ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* L_2 = ((UserNetworkVariableSerialization_1_tCAC9786549BF4B5BAD77C956BB809A0E1F61F510_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 6)))->___ReadDelta;
+		FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 L_3 = ___0_reader;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_4 = ___1_value;
+		NullCheck(L_2);
+		ReadDeltaDelegate_Invoke_m56817E30376D6E8E8A2197B6157444CF4513F4A7_inline(L_2, L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:931>
+		return;
+	}
+
+IL_001b:
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:934>
+		FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 L_5 = ___0_reader;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_6 = ___1_value;
+		UnmanagedNetworkSerializableSerializer_1_Read_mE124016C349EEFC34ED9BDFF0CC35D062EFEEC89(__this, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:935>
+		return;
+	}
+}
+// Method Definition Index: 86563
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Unity_Netcode_INetworkVariableSerializerU3CTU3E_ReadWithAllocator_mD28555DB4CEF4CA4106A96F154CC21137215A34C_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, int32_t ___2_allocator, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:939>
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_0 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, method);
+	}
+}
+// Method Definition Index: 86564
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Duplicate_mAEA588353496E9EEA45154D36D7005FB622C36B2_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:944>
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_0 = ___1_duplicatedValue;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_1 = ___0_value;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 L_2 = (*(CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*)L_1);
+		*(CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*)L_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedSerializerImplementations.cs:945>
+		return;
+	}
+}
+// Method Definition Index: 86565
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1__ctor_m9A01558A24B471815D4D2945B4B9D5F786976A05_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 86566
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1_Unity_Netcode_INetworkVariableSerializerU3CTU3E_Duplicate_m66B2F6F44582213F1B38C1AD494FA19938ED0BB7_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method) 
+{
+	{
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_0 = ___0_value;
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_1 = ___1_duplicatedValue;
+		UnmanagedNetworkSerializableSerializer_1_Duplicate_mAEA588353496E9EEA45154D36D7005FB622C36B2(__this, L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 13));
 		return;
 	}
 }
@@ -31281,6 +31534,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BufferSerializer_1__ctor_m6E
 		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/Serialization/BufferSerializer.cs:39>
 		return;
 	}
+}
+// Method Definition Index: 86589
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WriteDeltaDelegate_Invoke_m924349AF62CB2D9839D8B6982DB5F6003AE2FC62_gshared_inline (WriteDeltaDelegate_t10C9B55945D7510B7F75DB7FB96860E6AADE0A5B* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___2_previousValue, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_writer, ___1_value, ___2_previousValue, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 86597
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReadDeltaDelegate_Invoke_m56817E30376D6E8E8A2197B6157444CF4513F4A7_gshared_inline (ReadDeltaDelegate_t26AF45801ED5FC9FE10AA6999E36718F41087464* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_reader, ___1_value, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
 // Method Definition Index: 86589
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WriteDeltaDelegate_Invoke_m9FA7912977A7D81CC4676294A960C3473119B94A_gshared_inline (WriteDeltaDelegate_t4AEDE558F9D0813450B5FC3DEBBECDEDBC9DB4A2* __this, FastBufferWriter_tE6AFE9436BD125AF309056A81B70F95625FB96EC ___0_writer, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___1_value, GrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B* ___2_previousValue, const RuntimeMethod* method) 

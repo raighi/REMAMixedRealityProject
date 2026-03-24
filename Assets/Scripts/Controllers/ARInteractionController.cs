@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using Unity.Netcode;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Controller principal du joueur AR.
@@ -104,20 +105,16 @@ public class ARInteractionController : NetworkBehaviour
     // ─────────────────────────────────────────────
 
     private bool HasTapThisFrame()
-{
-    // Touch sur mobile
-    if (Touch.activeTouches.Count > 0
-        && Touch.activeTouches[0].phase == UnityEngine.InputSystem.TouchPhase.Began)
-        return true;
+    {
+        if (Touch.activeTouches.Count == 0) return false;
+        if (Touch.activeTouches[0].phase != UnityEngine.InputSystem.TouchPhase.Began) return false;
 
-    // Clic souris en éditeur
-    #if UNITY_EDITOR
-    if (UnityEngine.Input.GetMouseButtonDown(0))
-        return true;
-    #endif
+        // Ignorer le tap s'il touche un élément UI
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            return false;
 
-    return false;
-}
+        return true;
+    }
 
     // ─────────────────────────────────────────────
     // Logique d'orchestration

@@ -179,6 +179,7 @@ struct EqualsDelegate_tAAA16E425F163101D2191002A42EA8D95883EA74;
 struct EqualsDelegate_t3EC430AC662FE102E75F99640DDE30EA4285A344;
 struct EqualsDelegate_t1EFD799E8E6B1D1E26A758828CAF5FD4C039D590;
 struct EqualsDelegate_t9370C889F39FC53B932282B2B29277120A0435CA;
+struct EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA;
 struct EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D;
 struct EqualsDelegate_tBBD45AB658DFA1CACAF17E7C9E5E2E687ED0C1B2;
 struct EqualsDelegate_t830DE8580CB4378B25AA1C6AD24935064298A2F0;
@@ -308,6 +309,7 @@ struct INetworkVariableSerializer_1_t51BE24F83D1BA553429A22A3ED3C5E644A9E227B;
 struct INetworkVariableSerializer_1_tF32D1D2464D12B33A680281E87A3569C276766EC;
 struct INetworkVariableSerializer_1_tA95548509871CD690A53123059191B3956B05243;
 struct INetworkVariableSerializer_1_t350B134C5BB2B2091E7E0702EB24BFB2F79535BF;
+struct INetworkVariableSerializer_1_tB7CB9875B90C4F229BD40EAD015F19B0CD1A4EA0;
 struct INetworkVariableSerializer_1_t439E9932C47F068DF505BD112EB86592195C298A;
 struct INetworkVariableSerializer_1_t6B5A7CC42197C1507FD99201535089AD6070DCAF;
 struct INetworkVariableSerializer_1_t3C64551F839A6A785478D8079CFD705FE55D47B2;
@@ -441,6 +443,7 @@ struct RefCounted_t78303B1CD3D08C664ABB15EBD7C882DA3E06CF7D;
 struct RefCounted_tA9FB4D63A1064BD322AFDFCD70319CB384C057D9;
 struct RefCounted_t812D790A2C787F18230F9234F6C9B84D4AC1A85A;
 struct SelectObservable_2_t18DB3BD84546E800C7EE666A12BCD59E0D98A94C;
+struct UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6;
 struct UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44;
 struct UnmanagedTypeSerializer_1_t340ACC20A59D5E5F41735EABAF99E556861443B2;
 struct UnmanagedTypeSerializer_1_t1EE1696BBD4D8BD0CF02CCD7D7776693490D45EE;
@@ -1101,6 +1104,9 @@ struct NetworkVariableDictionarySerialization_2_t8C72F6EC40EB8C55C7439F2CAE549A5
 struct NetworkVariableEquality_1_t22C42061C10B8508DBCF34EF1DE0A65E92C1D969  : public RuntimeObject
 {
 };
+struct NetworkVariableEquality_1_tFBF383F3A48CF18C28844E1D7F828DC530573A99  : public RuntimeObject
+{
+};
 struct NetworkVariableEquality_1_tCDE82B5262D2C3FDA918792174D2D6C033F7867F  : public RuntimeObject
 {
 };
@@ -1132,6 +1138,9 @@ struct NetworkVariableSerialization_1_t9EAB92BF9AAB7B4B097AD07294541220D944C2E8 
 {
 };
 struct NetworkVariableSerialization_1_t164AFC6334E93E4D33544FD86CFD497037F599A3  : public RuntimeObject
+{
+};
+struct NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB  : public RuntimeObject
 {
 };
 struct NetworkVariableSerialization_1_tFD50A53FBDE50B35841D16886FA0E378B9CC5E4C  : public RuntimeObject
@@ -1190,6 +1199,9 @@ struct UnmanagedArraySerializer_1_tBF159525A94F0E1F3182392F60E1BCB0901967EF  : p
 {
 };
 struct UnmanagedNetworkSerializableArraySerializer_1_tFF7D0115BBE28EC85F03AF6C563D8033E8036C6E  : public RuntimeObject
+{
+};
+struct UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6  : public RuntimeObject
 {
 };
 struct UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44  : public RuntimeObject
@@ -1599,6 +1611,18 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
 {
 	uint8_t ___m_value;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 
+{
+	bool ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_pinvoke
+{
+	int32_t ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_com
+{
+	int32_t ___IsUnlocked;
 };
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
@@ -5326,6 +5350,9 @@ struct EqualsDelegate_t1EFD799E8E6B1D1E26A758828CAF5FD4C039D590  : public Multic
 struct EqualsDelegate_t9370C889F39FC53B932282B2B29277120A0435CA  : public MulticastDelegate_t
 {
 };
+struct EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA  : public MulticastDelegate_t
+{
+};
 struct EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D  : public MulticastDelegate_t
 {
 };
@@ -6529,6 +6556,11 @@ struct NetworkVariableSerialization_1_t164AFC6334E93E4D33544FD86CFD497037F599A3_
 	RuntimeObject* ___Serializer;
 	EqualsDelegate_t9370C889F39FC53B932282B2B29277120A0435CA* ___U3CAreEqualU3Ek__BackingField;
 };
+struct NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB_StaticFields
+{
+	RuntimeObject* ___Serializer;
+	EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* ___U3CAreEqualU3Ek__BackingField;
+};
 struct NetworkVariableSerialization_1_tFD50A53FBDE50B35841D16886FA0E378B9CC5E4C_StaticFields
 {
 	RuntimeObject* ___Serializer;
@@ -7404,12 +7436,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualsDelegate__ctor_m016ACF4654E5B8EA4E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization_1_set_AreEqual_m5122C262ED62B55147EFF04549AC4594226E61D5_gshared_inline (EqualsDelegate_t830DE8580CB4378B25AA1C6AD24935064298A2F0* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualsDelegate__ctor_m8F85897A2784EBB401F947AF9E0494373528652B_gshared (EqualsDelegate_t988E31EFA63C33DA85A5C618D9D868395D9CE7D9* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization_1_set_AreEqual_m50CF1E5A4006ADB4CEBC77FD0203219103ECD5FA_gshared_inline (EqualsDelegate_t988E31EFA63C33DA85A5C618D9D868395D9CE7D9* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualsDelegate__ctor_m101C4EB25100C2E1D05A5C0FC798C8944AC7F930_gshared (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization_1_set_AreEqual_m7C7869F6B2593A6D08C893D159FCFE28B44C162F_gshared_inline (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualsDelegate__ctor_m4E16965E5603089A42B5E091972019CA5EA10728_gshared (EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization_1_set_AreEqual_mDE38F0AB694C51CDD0FCFB949A4F7010BC33CD2A_gshared_inline (EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManagedNetworkSerializableSerializer_1__ctor_m0305DA5951760BDBA3C5FACEDC7440E72B39982D_gshared (ManagedNetworkSerializableSerializer_1_t1178CB8A63D4A6ACBEFF6FCC0D6372DB0DCF6F40* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedTypeSerializer_1__ctor_mDF5560CCD9A926B7B668DC5E5DD81E5F7FB1F785_gshared (UnmanagedTypeSerializer_1_t340ACC20A59D5E5F41735EABAF99E556861443B2* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedTypeSerializer_1__ctor_m8C7DBB99C26793E8768413062760E4B427F8663F_gshared (UnmanagedTypeSerializer_1_t1EE1696BBD4D8BD0CF02CCD7D7776693490D45EE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedTypeSerializer_1__ctor_mC926841552E70D6E854105E7434BFAF58513852A_gshared (UnmanagedTypeSerializer_1_t1D856B5F1271C60AE581A4445BE401F95FA4BDE7* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1__ctor_m9A01558A24B471815D4D2945B4B9D5F786976A05_gshared (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedNetworkSerializableSerializer_1__ctor_mAEA476965DE99E88F2239DA1A4DAF46B9E1A51E4_gshared (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnsafeUtility_As_TisRuntimeObject_m0FFD91677D5F942D9FA7112820E0596B59865532_gshared (RuntimeObject* ___0_from, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReadOnlySpan_1__ctor_m75533883DBEB84184F1D12F3B3B7E355C73B8E6A_gshared_inline (ReadOnlySpan_1_t6190994DF094ABDFA6908C2C3FB347457E8E4282* __this, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___0_array, int32_t ___1_start, int32_t ___2_length, const RuntimeMethod* method) ;
@@ -7755,6 +7790,14 @@ inline void NetworkVariableSerialization_1_set_AreEqual_m50CF1E5A4006ADB4CEBC77F
 {
 	((  void (*) (EqualsDelegate_t988E31EFA63C33DA85A5C618D9D868395D9CE7D9*, const RuntimeMethod*))NetworkVariableSerialization_1_set_AreEqual_m50CF1E5A4006ADB4CEBC77FD0203219103ECD5FA_gshared_inline)(___0_value, method);
 }
+inline void EqualsDelegate__ctor_m101C4EB25100C2E1D05A5C0FC798C8944AC7F930 (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA*, RuntimeObject*, intptr_t, const RuntimeMethod*))EqualsDelegate__ctor_m101C4EB25100C2E1D05A5C0FC798C8944AC7F930_gshared)(__this, ___0_object, ___1_method, method);
+}
+inline void NetworkVariableSerialization_1_set_AreEqual_m7C7869F6B2593A6D08C893D159FCFE28B44C162F_inline (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA*, const RuntimeMethod*))NetworkVariableSerialization_1_set_AreEqual_m7C7869F6B2593A6D08C893D159FCFE28B44C162F_gshared_inline)(___0_value, method);
+}
 inline void EqualsDelegate__ctor_m4E16965E5603089A42B5E091972019CA5EA10728 (EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
 	((  void (*) (EqualsDelegate_t53191E807A4B59EE4ADFE22EA31C689BA11E9C1D*, RuntimeObject*, intptr_t, const RuntimeMethod*))EqualsDelegate__ctor_m4E16965E5603089A42B5E091972019CA5EA10728_gshared)(__this, ___0_object, ___1_method, method);
@@ -7778,6 +7821,10 @@ inline void UnmanagedTypeSerializer_1__ctor_m8C7DBB99C26793E8768413062760E4B427F
 inline void UnmanagedTypeSerializer_1__ctor_mC926841552E70D6E854105E7434BFAF58513852A (UnmanagedTypeSerializer_1_t1D856B5F1271C60AE581A4445BE401F95FA4BDE7* __this, const RuntimeMethod* method)
 {
 	((  void (*) (UnmanagedTypeSerializer_1_t1D856B5F1271C60AE581A4445BE401F95FA4BDE7*, const RuntimeMethod*))UnmanagedTypeSerializer_1__ctor_mC926841552E70D6E854105E7434BFAF58513852A_gshared)(__this, method);
+}
+inline void UnmanagedNetworkSerializableSerializer_1__ctor_m9A01558A24B471815D4D2945B4B9D5F786976A05 (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6*, const RuntimeMethod*))UnmanagedNetworkSerializableSerializer_1__ctor_m9A01558A24B471815D4D2945B4B9D5F786976A05_gshared)(__this, method);
 }
 inline void UnmanagedNetworkSerializableSerializer_1__ctor_mAEA476965DE99E88F2239DA1A4DAF46B9E1A51E4 (UnmanagedNetworkSerializableSerializer_1_t8306BDA6884A4CE6A01ADA98FB21314FDEDE0B44* __this, const RuntimeMethod* method)
 {
@@ -10882,6 +10929,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitial
 	}
 }
 // Method Definition Index: 86452
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitializers_InitializeEqualityChecker_UnmanagedValueEquals_TisCodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_m3714C5824FAFDCEE3F4D66CD16DA9AD54B9928B8_gshared (const RuntimeMethod* method) 
+{
+	il2cpp_rgctx_method_init(method);
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedILPPInitializers.cs:286>
+		EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* L_0 = (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 1));
+		EqualsDelegate__ctor_m101C4EB25100C2E1D05A5C0FC798C8944AC7F930(L_0, NULL, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 0)), il2cpp_rgctx_method(method->rgctx_data, 2));
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 4));
+		NetworkVariableSerialization_1_set_AreEqual_m7C7869F6B2593A6D08C893D159FCFE28B44C162F_inline(L_0, il2cpp_rgctx_method(method->rgctx_data, 3));
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedILPPInitializers.cs:287>
+		return;
+	}
+}
+// Method Definition Index: 86452
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitializers_InitializeEqualityChecker_UnmanagedValueEquals_TisGrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B_m223F5531E8FD77A1E62619D48EE318BC885A6D57_gshared (const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -11089,6 +11150,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitial
 	}
 }
 // Method Definition Index: 86441
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitializers_InitializeSerializer_UnmanagedINetworkSerializable_TisCodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_mC3C09BD7195AC4691847B099B9BFD59DB56961BB_gshared (const RuntimeMethod* method) 
+{
+	il2cpp_rgctx_method_init(method);
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedILPPInitializers.cs:128>
+		UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6* L_0 = (UnmanagedNetworkSerializableSerializer_1_t3A4A4F222362A898AABEFCB15D9DBBBBD64751E6*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
+		UnmanagedNetworkSerializableSerializer_1__ctor_m9A01558A24B471815D4D2945B4B9D5F786976A05(L_0, il2cpp_rgctx_method(method->rgctx_data, 1));
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 4));
+		((NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 4)))->___Serializer = (RuntimeObject*)L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 4)))->___Serializer), (void*)(RuntimeObject*)L_0);
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/TypedILPPInitializers.cs:129>
+		return;
+	}
+}
+// Method Definition Index: 86441
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitializers_InitializeSerializer_UnmanagedINetworkSerializable_TisGrabState_t00E19B3AE1C4863A52E87F65932E5C24C415CB3B_mD371CEDF0DE553E6DD4E21B6364A966DAF627D4C_gshared (const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -11133,7 +11209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkVariableSerializationTypedInitial
 		return;
 	}
 }
-// Method Definition Index: 130965
+// Method Definition Index: 131310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SerializableProjectConfiguration_tBAE4D3A66EC38C1869E294396DB79F127B8F58EE NewtonsoftSerializer_DeserializeObject_TisSerializableProjectConfiguration_tBAE4D3A66EC38C1869E294396DB79F127B8F58EE_m7EE78C26F6155AFBBA7D9B26E1BC7BBDD0ED5986_gshared (NewtonsoftSerializer_t2B162D78E5CB7ED167264C825A95A2642D01D6CC* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -11208,7 +11284,7 @@ IL_0034:
 		return L_10;
 	}
 }
-// Method Definition Index: 130965
+// Method Definition Index: 131310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewtonsoftSerializer_DeserializeObject_TisIl2CppFullySharedGenericAny_mA2B8C8E9AE34F1F0154C486B5E8AB555098802F0_gshared (NewtonsoftSerializer_t2B162D78E5CB7ED167264C825A95A2642D01D6CC* __this, String_t* ___0_value, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -11288,7 +11364,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 130964
+// Method Definition Index: 131309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NewtonsoftSerializer_SerializeObject_TisRuntimeObject_mFD0106E155D5EA4DE87655602F63A0C357327A41_gshared (NewtonsoftSerializer_t2B162D78E5CB7ED167264C825A95A2642D01D6CC* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -11421,7 +11497,7 @@ IL_0066:
 		return L_19;
 	}
 }
-// Method Definition Index: 130964
+// Method Definition Index: 131309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NewtonsoftSerializer_SerializeObject_TisIl2CppFullySharedGenericAny_m359D7F3918C50855A895EE73F9039A714D509704_gshared (NewtonsoftSerializer_t2B162D78E5CB7ED167264C825A95A2642D01D6CC* __this, Il2CppFullySharedGenericAny ___0_value, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -13966,7 +14042,7 @@ IL_0017:
 		return L_6;
 	}
 }
-// Method Definition Index: 136237
+// Method Definition Index: 136290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* ObjectPoolCreateUtil_Create_TisRuntimeObject_mEDF439598566805F750E3F353ECFDFEF9E6ABF19_gshared (int32_t ___0_defaultCapacity, int32_t ___1_maxSize, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14011,7 +14087,7 @@ IL_001f:
 		return L_7;
 	}
 }
-// Method Definition Index: 136238
+// Method Definition Index: 136291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* ObjectPoolCreateUtil_CreateWithReleaseTrigger_TisRuntimeObject_mC0AF60F87BD65E9435E4D1DDC517D4A722B7E24C_gshared (int32_t ___0_defaultCapacity, int32_t ___1_maxSize, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -15351,7 +15427,7 @@ IL_0032:
 		return L_13;
 	}
 }
-// Method Definition Index: 129357
+// Method Definition Index: 129702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OpenXRUtility_IsOpenXRFeatureEnabled_TisRuntimeObject_mB961F39BD2F1E699100F5CC03A50CDD67DDF5132_gshared (const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15412,7 +15488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OptimizedReflection_VerifyInstanceTarget
 		return;
 	}
 }
-// Method Definition Index: 130866
+// Method Definition Index: 131211
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterDependency_TisRuntimeObject_mCFCAB818C2F30D83EE035205F6166294EB3C0930_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15455,7 +15531,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterDependency_TisRu
 		return;
 	}
 }
-// Method Definition Index: 130866
+// Method Definition Index: 131211
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterDependency_TisIl2CppFullySharedGenericAny_m1176752312135ECAC03589D041DD26CE2A2868B1_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15498,7 +15574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterDependency_TisIl
 		return;
 	}
 }
-// Method Definition Index: 130867
+// Method Definition Index: 131212
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterOptionalDependency_TisRuntimeObject_m56A77DB3A75198B7A3BCA280D6BD729C43219B30_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15553,7 +15629,7 @@ IL_0035:
 		return;
 	}
 }
-// Method Definition Index: 130867
+// Method Definition Index: 131212
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterOptionalDependency_TisIl2CppFullySharedGenericAny_m44D8DB24B50219265B65F024EF17184B63D1195F_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15608,7 +15684,7 @@ IL_0035:
 		return;
 	}
 }
-// Method Definition Index: 130865
+// Method Definition Index: 131210
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 PackageRegistry_RegisterPackage_TisRuntimeObject_m71DAE0E56E10EBA45748EDC999A32A731EB61023_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, RuntimeObject* ___0_package, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15657,7 +15733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C
 		return L_12;
 	}
 }
-// Method Definition Index: 130865
+// Method Definition Index: 131210
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C6494C0EB85581 PackageRegistry_RegisterPackage_TisIl2CppFullySharedGenericAny_m2397275E72A89A1051BFD2CA0F73BC5D01C139E9_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, Il2CppFullySharedGenericAny ___0_package, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15709,7 +15785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoreRegistration_tD2BD53556CAA48BD5E0D32CB92C
 		return L_13;
 	}
 }
-// Method Definition Index: 130868
+// Method Definition Index: 131213
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterProvision_TisRuntimeObject_m0C5F363053D86D1B51A293FB1215AF5050DD25A4_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -15741,7 +15817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterProvision_TisRun
 		return;
 	}
 }
-// Method Definition Index: 130868
+// Method Definition Index: 131213
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageRegistry_RegisterProvision_TisIl2CppFullySharedGenericAny_m40EBEACBF205EE4E9ECF87209FFF914C193045F7_gshared (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, int32_t ___0_packageTypeHash, const RuntimeMethod* method) 
 {
 	if (!il2cpp_rgctx_is_initialized(method))
@@ -32344,7 +32420,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OpenXRLoaderBase_t58BF6FC81FD9A76
 		return L_0;
 	}
 }
-// Method Definition Index: 130862
+// Method Definition Index: 131207
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DependencyTree_tEBAA00C1044A3FFB3C1A7B716CDA96E9B76CD992* PackageRegistry_get_Tree_m346DB9D9068093E382434951B623D2593072E31B_inline (PackageRegistry_tEC69FE10BB71F416B3FFACF803BFAF0EED0448E9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -32596,6 +32672,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2));
 		((NetworkVariableSerialization_1_tB543FDDEC4F9A4B22674F818DFE941254EEBEBA1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CAreEqualU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((NetworkVariableSerialization_1_tB543FDDEC4F9A4B22674F818DFE941254EEBEBA1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CAreEqualU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 86416
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NetworkVariableSerialization_1_set_AreEqual_m7C7869F6B2593A6D08C893D159FCFE28B44C162F_gshared_inline (EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/NetworkVariableSerialization.cs:37>
+		EqualsDelegate_tE25A02656073E1C01937A72EA7E011D86471B0DA* L_0 = ___0_value;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2));
+		((NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CAreEqualU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((NetworkVariableSerialization_1_t7084420AEE08293186A7EAB0B0F46D30CB4910DB_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CAreEqualU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }

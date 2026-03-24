@@ -1074,6 +1074,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
               "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,

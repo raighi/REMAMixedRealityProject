@@ -1086,6 +1086,9 @@ struct NetworkPrefabInstanceHandlerWithData_1_tD7E868B90A47E4E7FB5D35A01E28A6711
 struct NetworkVariableEquality_1_t22C42061C10B8508DBCF34EF1DE0A65E92C1D969  : public RuntimeObject
 {
 };
+struct NetworkVariableEquality_1_tFBF383F3A48CF18C28844E1D7F828DC530573A99  : public RuntimeObject
+{
+};
 struct NetworkVariableEquality_1_tCDE82B5262D2C3FDA918792174D2D6C033F7867F  : public RuntimeObject
 {
 };
@@ -2018,6 +2021,18 @@ struct CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_marshaled_pin
 struct CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_marshaled_com
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ____source;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 
+{
+	bool ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_pinvoke
+{
+	int32_t ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_com
+{
+	int32_t ___IsUnlocked;
 };
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
@@ -19141,6 +19156,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkVariableEquality_1_EqualityEquals
 		bool L_3;
 		L_3 = Boolean_Equals_mC020D5EB2F64274CD623E8449E8777A70BEC6CC9(L_0, L_2, il2cpp_rgctx_method(method->rgctx_data, 3));
 		return L_3;
+	}
+}
+// Method Definition Index: 86407
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkVariableEquality_1_ValueEquals_TisCodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_m550A5C219F9BD9CB0625AC394D4317D0B1C6BF16_gshared (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_a, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_b, const RuntimeMethod* method) 
+{
+	void* V_0 = NULL;
+	{
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/NetworkVariableEquality.cs:17>
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_0 = ___0_a;
+		void* L_1;
+		L_1 = il2cpp_codegen_unsafe_cast(L_0);
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/NetworkVariableEquality.cs:18>
+		CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* L_2 = ___1_b;
+		void* L_3;
+		L_3 = il2cpp_codegen_unsafe_cast(L_2);
+		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.netcode.gameobjects@c690afa8ab6e/Runtime/NetworkVariable/Serialization/NetworkVariableEquality.cs:21>
+		void* L_4 = V_0;
+		uint32_t L_5 = sizeof(CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162);
+		int32_t L_6;
+		L_6 = UnsafeUtility_MemCmp_mA0E0E1A93F715105E7B576F1603DCAB37717A5EF(L_1, L_4, ((int64_t)((int32_t)L_5)), NULL);
+		return (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
 	}
 }
 // Method Definition Index: 86407

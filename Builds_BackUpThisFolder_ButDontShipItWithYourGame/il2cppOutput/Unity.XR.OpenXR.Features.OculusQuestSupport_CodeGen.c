@@ -18,9 +18,9 @@ static Il2CppMethodPointer s_methodPointers[3] =
 };
 static const int32_t s_InvokerIndices[3] = 
 {
-	38549,
-	23058,
-	23058,
+	38558,
+	23066,
+	23066,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_OculusQuestSupport_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_OpenXR_Features_OculusQuestSupport_CodeGenModule = 

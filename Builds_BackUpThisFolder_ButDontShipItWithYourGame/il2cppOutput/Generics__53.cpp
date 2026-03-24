@@ -287,6 +287,7 @@ struct DotProduct_1_t70CFEFCB81FC10AD5E0B71BCBA244B43B0E566AE;
 struct DotProduct_1_t34B888FFBDBC2CA4FB67CA9519146C72A917D78B;
 struct DuplicateValueDelegate_t6635F1BF24248C8782CACC35AEE25D53A1214E26;
 struct DuplicateValueDelegate_t7549B28A5DFA0C3E92A46C65FBE3A1CB6F622A23;
+struct DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2;
 struct DuplicateValueDelegate_tE5F8FD025548480C44EE4726D21939240E01675F;
 struct DuplicateValueDelegate_t7EA6152D9BF4D3598CAB493158F886858A663612;
 struct DuplicateValueDelegate_tBD06C453F92098D0808CCCEE96374C1654B7923A;
@@ -513,6 +514,7 @@ struct TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t6043513E89820190529C82ABBDD8FD0BB2A9AC09_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BindingRestrictions_t82F6450C15BA76194E37B20305C3C2932527C424_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CollectionPool_2_t5B361942F59C43867F72F5B0D244C2D537EC0694_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC_il2cpp_TypeInfo_var;
@@ -1211,6 +1213,18 @@ struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3
 struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17 
 {
 	Il2CppChar ___m_value;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162 
+{
+	bool ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_pinvoke
+{
+	int32_t ___IsUnlocked;
+};
+struct CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_marshaled_com
+{
+	int32_t ___IsUnlocked;
 };
 struct ConditionalExpression_t4A487FB09E6FEA815F25AADA33335CD658B6A913  : public Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785
 {
@@ -2461,6 +2475,9 @@ struct DuplicateValueDelegate_t6635F1BF24248C8782CACC35AEE25D53A1214E26  : publi
 {
 };
 struct DuplicateValueDelegate_t7549B28A5DFA0C3E92A46C65FBE3A1CB6F622A23  : public MulticastDelegate_t
+{
+};
+struct DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2  : public MulticastDelegate_t
 {
 };
 struct DuplicateValueDelegate_tE5F8FD025548480C44EE4726D21939240E01675F  : public MulticastDelegate_t
@@ -8170,6 +8187,101 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DuplicateValueDelegate_BeginIn
 }
 // Method Definition Index: 86603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DuplicateValueDelegate_EndInvoke_m81A415142428EA42B7E0285693D23F851CAB5B59_gshared (DuplicateValueDelegate_t7549B28A5DFA0C3E92A46C65FBE3A1CB6F622A23* __this, bool* ___0_value, bool* ___1_duplicatedValue, RuntimeObject* ___2_result, const RuntimeMethod* method) 
+{
+	void* ___out_args[] = {
+	___1_duplicatedValue,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___2_result, ___out_args);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_Multicast(DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* currentDelegate = reinterpret_cast<DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl)((Il2CppObject*)currentDelegate->___method_code, ___0_value, ___1_duplicatedValue, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method));
+	}
+}
+void DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_OpenInst(DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method)
+{
+	NullCheck(___0_value);
+	typedef void (*FunctionPointerType) (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_value, ___1_duplicatedValue, method);
+}
+void DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_OpenStatic(DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_value, ___1_duplicatedValue, method);
+}
+// Method Definition Index: 86600
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DuplicateValueDelegate__ctor_m190521EECFC8234DEE69A90E0AE2E5EC50C3E7C5_gshared (DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method = ___1_method;
+	__this->___m_target = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 2;
+		if (isOpen)
+			__this->___invoke_impl = (intptr_t)&DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_OpenStatic;
+		else
+			{
+				__this->___invoke_impl = __this->___method_ptr;
+				__this->___method_code = (intptr_t)__this->___m_target;
+			}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 1;
+		if (isOpen)
+		{
+			__this->___invoke_impl = (intptr_t)&DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_OpenInst;
+		}
+		else
+		{
+			if (___0_object == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+			__this->___invoke_impl = __this->___method_ptr;
+			__this->___method_code = (intptr_t)__this->___m_target;
+		}
+	}
+	__this->___extra_arg = (intptr_t)&DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_Multicast;
+}
+// Method Definition Index: 86601
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DuplicateValueDelegate_Invoke_mD45191F01CC345A1DA5601E3368D0E85AC5A0AF9_gshared (DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_value, ___1_duplicatedValue, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 86602
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DuplicateValueDelegate_BeginInvoke_mA2CA92CE7DF77551655FA083D1D8E7A735374E5C_gshared (DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___2_callback, RuntimeObject* ___3_object, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_il2cpp_TypeInfo_var, &*___0_value);
+	__d_args[1] = Box(CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162_il2cpp_TypeInfo_var, &*___1_duplicatedValue);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___2_callback, (RuntimeObject*)___3_object);
+}
+// Method Definition Index: 86603
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DuplicateValueDelegate_EndInvoke_m2A8F39BDE7840E8E03F8F0FA72E5E704A6FAD194_gshared (DuplicateValueDelegate_t070AD7E0AD397ECF5D540F09E5D573956FDABAC2* __this, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___0_value, CodeLockState_t3FB878A3C53ACFB5A1F399D5E2876FD26CF36162* ___1_duplicatedValue, RuntimeObject* ___2_result, const RuntimeMethod* method) 
 {
 	void* ___out_args[] = {
 	___1_duplicatedValue,
