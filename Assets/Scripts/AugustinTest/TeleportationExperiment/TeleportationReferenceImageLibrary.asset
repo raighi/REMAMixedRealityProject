@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: TeleportationReferenceImageLibrary
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 5173930685201494644
+  m_GuidHigh: 3400365951923290263
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5402982268821172704
+      m_GuidHigh: 8760021651207453073
+    m_SerializedTextureGuid:
+      m_GuidLow: 14637847724701516199
+      m_GuidHigh: 6458237682746207003
+    m_Size: {x: 4.5, y: 4.529126}
+    m_SpecifySize: 1
+    m_Name: Calibration
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5494979575876421022
+      m_GuidHigh: 14917192306567916967
+    m_SerializedTextureGuid:
+      m_GuidLow: 5189514083256961918
+      m_GuidHigh: 10331380297458603
+    m_Size: {x: 4.5, y: 4.529126}
+    m_SpecifySize: 1
+    m_Name: Teleport
+    m_Texture: {fileID: 0}
