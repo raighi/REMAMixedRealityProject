@@ -456,11 +456,16 @@ UnityEngine.AsyncOperation::get_isDone_Injected
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AsyncOperation::InternalSetManagedObject
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
+UnityEngine.AudioClip::get_length_Injected
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::PlayHelper_Injected
 UnityEngine.AudioSource::PlayOneShotHelper_Injected
+UnityEngine.AudioSource::set_generatorObject_Injected
 UnityEngine.AudioSource::set_loop_Injected
+UnityEngine.AudioSource::set_outputAudioMixerGroup_Injected
 UnityEngine.AudioSource::set_playOnAwake_Injected
+UnityEngine.AudioSource::set_spatialBlend_Injected
 UnityEngine.Awaitable::IsNativeAwaitableCompleted
 UnityEngine.Awaitable::WaitForScondsInternal
 UnityEngine.Awaitable::AttachManagedGCHandleToNativeAwaitable

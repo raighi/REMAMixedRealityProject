@@ -102,7 +102,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -121,9 +123,35 @@
             "icon": null
           },
           {
+            "name": "AudioMixer",
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioMixerGroup",
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioMixerSnapshot",
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1690,6 +1718,12 @@
       {
         "name": "UnityConnect",
         "dependencies": [
+          {
+            "name": "UnityConnectSettings",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
           {
             "name": "Required by CrashReporting Module",
             "scenes": [],

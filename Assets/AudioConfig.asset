@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9afc9ab3660a74db855b0e6c594531, type: 3}
+  m_Name: AudioConfig
+  m_EditorClassIdentifier: Assembly-CSharp::AudioConfig
+  dungeonAmbientLoop: {fileID: 8300000, guid: eca2efbc534f6a940bcaa734ec7d62f6, type: 3}
+  grabSound: {fileID: 8300000, guid: 2aeda9ddd317ff74498be6bdf3adc102, type: 3}
+  dropSound: {fileID: 8300000, guid: 0f9d58f70cb60b84b815780e9968f746, type: 3}
+  doorOpenSound: {fileID: 8300000, guid: 38b1fb7602bfdc0448dea17ef345395f, type: 3}
+  keypadBeep: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  keypadValid: {fileID: 8300000, guid: b7d3caaf8fe2d4044a3231b270cb8c33, type: 3}
+  keypadError: {fileID: 8300000, guid: d28f0264efb61d345ade3db3675d8b51, type: 3}
