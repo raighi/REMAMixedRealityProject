@@ -69,7 +69,7 @@ MonoBehaviour:
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegions: 0
+  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &-8990545807176673946
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-8048523615881321437
@@ -378,41 +378,31 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 3226749456099219857}
-  - {fileID: -8353656579498650841}
-  - {fileID: -8166349533993247056}
+  - {fileID: 1391195606878934229}
+  - {fileID: 816046733043652966}
+  - {fileID: 1866207625950551349}
   - {fileID: 4856140395868224370}
-  - {fileID: -3433286337821797772}
-  - {fileID: 1599515537219536362}
+  - {fileID: -8166349533993247056}
+  - {fileID: -417712817543420565}
+  - {fileID: 773913639623471640}
   - {fileID: -6783477033306664437}
-  - {fileID: 4185885687791525211}
-  - {fileID: 2023495531665776958}
   - {fileID: -5773564719419821298}
+  - {fileID: 27870673730377999}
+  - {fileID: -9211030593164903877}
+  - {fileID: 2023495531665776958}
   - {fileID: -5716970278999043982}
+  - {fileID: 472495303558419824}
+  - {fileID: -3433286337821797772}
+  - {fileID: -4007437484365093403}
+  - {fileID: 4185885687791525211}
+  - {fileID: 1599515537219536362}
+  - {fileID: -8353656579498650841}
+  - {fileID: 4773767460497848336}
   - {fileID: -280513603776306642}
+  - {fileID: 3226749456099219857}
   - {fileID: 1438063072094852541}
   - {fileID: -7413254622098949564}
-  - {fileID: -9211030593164903877}
-  - {fileID: -4007437484365093403}
-  - {fileID: 773913639623471640}
-  - {fileID: -417712817543420565}
-  - {fileID: 27870673730377999}
-  - {fileID: 4773767460497848336}
-  - {fileID: 472495303558419824}
   - {fileID: -8860627715942337029}
-  - {fileID: 1657321655465190895}
-  - {fileID: 4153446730969424278}
-  - {fileID: 1866207625950551349}
-  - {fileID: 1391195606878934229}
-  - {fileID: 6722687317600650152}
-  - {fileID: 816046733043652966}
-  - {fileID: 6394519128914556394}
-  - {fileID: -2835656759751404878}
-  - {fileID: -3805207892459458475}
-  - {fileID: 3974173252080953561}
-  - {fileID: -7840055078142245696}
-  - {fileID: -8282076007975919993}
-  - {fileID: -8306359081575301698}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -425,7 +415,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-7101314254548692706
@@ -1141,42 +1131,42 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 2764720532582786830}
-  - {fileID: -3184710368418711045}
-  - {fileID: -5949665219435567736}
-  - {fileID: -9023008947189995388}
-  - {fileID: 593144632031223897}
-  - {fileID: 3547470000453315750}
-  - {fileID: -1108674187682696521}
-  - {fileID: -5328103408338329729}
-  - {fileID: -5776596127437422156}
-  - {fileID: 1365042734342596824}
-  - {fileID: -6969155586196340862}
-  - {fileID: 6920807554660365409}
-  - {fileID: -5314111289764948722}
-  - {fileID: -3508738103646119902}
-  - {fileID: 2799863586881052618}
-  - {fileID: 286007782276846802}
-  - {fileID: -6246020777529296227}
-  - {fileID: -2190435699509600478}
-  - {fileID: -4746389614789209377}
-  - {fileID: 3244130647467275836}
-  - {fileID: -5662462407121200406}
-  - {fileID: 9166704961626381382}
-  - {fileID: -7101314254548692706}
-  - {fileID: 8425391601966117965}
-  - {fileID: -3122512936638215411}
   - {fileID: 3429671883272825321}
-  - {fileID: 4341525873406303977}
-  - {fileID: -7363418383349200872}
-  - {fileID: 8701808946642107598}
-  - {fileID: -7715985028237719993}
-  - {fileID: 4810168934980771803}
-  - {fileID: -3290264333097531332}
-  - {fileID: -3718020604486051470}
   - {fileID: -8282076007975919993}
   - {fileID: 6722687317600650152}
+  - {fileID: 4341525873406303977}
+  - {fileID: -7101314254548692706}
+  - {fileID: 8701808946642107598}
+  - {fileID: -3290264333097531332}
+  - {fileID: -3122512936638215411}
+  - {fileID: 4810168934980771803}
+  - {fileID: -7715985028237719993}
+  - {fileID: 8425391601966117965}
+  - {fileID: -3718020604486051470}
+  - {fileID: -7363418383349200872}
   - {fileID: 4153446730969424278}
+  - {fileID: -5328103408338329729}
+  - {fileID: -2190435699509600478}
+  - {fileID: 3547470000453315750}
+  - {fileID: 593144632031223897}
+  - {fileID: -6246020777529296227}
+  - {fileID: 286007782276846802}
+  - {fileID: -5776596127437422156}
+  - {fileID: -6969155586196340862}
+  - {fileID: -4746389614789209377}
+  - {fileID: 6920807554660365409}
+  - {fileID: -5662462407121200406}
+  - {fileID: -9023008947189995388}
+  - {fileID: -1108674187682696521}
+  - {fileID: 2799863586881052618}
+  - {fileID: 1365042734342596824}
+  - {fileID: -5949665219435567736}
+  - {fileID: -3184710368418711045}
+  - {fileID: 3244130647467275836}
+  - {fileID: -5314111289764948722}
+  - {fileID: 2764720532582786830}
+  - {fileID: -3508738103646119902}
+  - {fileID: 9166704961626381382}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -1189,7 +1179,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-523318999711591788
@@ -1418,7 +1408,7 @@ MonoBehaviour:
   nameUi: 'Android XR: AR Anchor'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-anchor
-  openxrExtensionStrings: XR_ANDROID_trackables
+  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_device_anchor_persistence
   company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
@@ -1932,7 +1922,7 @@ MonoBehaviour:
   nameUi: 'Android XR: AR Anchor'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-androidxr-anchor
-  openxrExtensionStrings: XR_ANDROID_trackables
+  openxrExtensionStrings: XR_ANDROID_trackables XR_ANDROID_device_anchor_persistence
   company: Unity Technologies
   priority: 0
   targetOpenXRApiVersion: 
@@ -2073,7 +2063,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &6394519128914556394
