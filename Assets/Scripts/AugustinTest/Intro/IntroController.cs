@@ -4,11 +4,13 @@ public class IntroController
 {
     private BackgroundIntroView backgroundIntroView;
     private TextIntroModel textIntroModel;
+    private NewUniversalConnectionManager universalConnectionManager;
 
-    public IntroController(TextIntroModel model, BackgroundIntroView view)
+    public IntroController(TextIntroModel model, BackgroundIntroView view, NewUniversalConnectionManager connectionManager)
     {
         textIntroModel = model;
         backgroundIntroView = view;
+        universalConnectionManager = connectionManager;
 
         RefreshView();
     }
@@ -35,9 +37,10 @@ public class IntroController
             textIntroModel.GoNextText();
             RefreshView();
         }
-        else
+        else if (!textIntroModel.IsConnected())
         {
-            Debug.Log("Fin de l’introduction → lancer la suite du jeu");
+            universalConnectionManager.Connect();
+            Debug.Log("Fin de l’introduction → lancement de la suite du jeu");
         }
     }
 

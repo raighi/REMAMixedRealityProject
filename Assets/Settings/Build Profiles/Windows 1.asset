@@ -19,11 +19,7 @@ MonoBehaviour:
   m_PlatformBuildProfile:
     rid: 2310957327931670612
   m_OverrideGlobalSceneList: 1
-  m_Scenes:
-  - m_enabled: 1
-    m_path: Assets/Scenes/ARScene.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/TESTCO+VR.unity
+  m_Scenes: []
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -962,11 +958,11 @@ MonoBehaviour:
     - line: '|   captureStartupLogs: {}'
     - line: '|   activeInputHandler: 1'
     - line: '|   windowsGamepadBackendHint: 0'
-    - line: '|   cloudProjectId: 0ed285f0-a7d6-4b5a-9459-898daae564ca'
+    - line: '|   cloudProjectId: df91ea15-a61f-472c-9487-b7784645b565'
     - line: '|   framebufferDepthMemorylessMode: 0'
     - line: '|   qualitySettingsNames: []'
     - line: '|   projectName: RemaApp'
-    - line: '|   organizationId: raighi21'
+    - line: '|   organizationId: scarfinos'
     - line: '|   cloudEnabled: 0'
     - line: '|   legacyClampBlendShapeWeights: 0'
     - line: '|   hmiLoadingImage: {instanceID: 0}'
