@@ -663,7 +663,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1472958302672828492, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
       propertyPath: m_Name
-      value: Ghost
+      value: GhostAvatar
       objectReference: {fileID: 0}
     - target: {fileID: 2250444567716750070, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
       propertyPath: m_LocalPosition.x
@@ -705,6 +705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4202500242814284843, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
+      propertyPath: m_Name
+      value: Ghost
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -712,6 +716,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1472958302672828492, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2258216740014936871}
+    - targetCorrespondingSourceObject: {fileID: 1472958302672828492, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8984237139503268698}
   m_SourcePrefab: {fileID: 100100000, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
 --- !u!1 &8368880361918432239 stripped
 GameObject:
@@ -743,6 +750,23 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8984237139503268698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8368880361918432239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e99af1a698fb4644a9427f79dbb2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARAvatarController
+  head:
+    arTarget: {fileID: 7152367410355363143}
+    IKTarget: {fileID: 9182818705620621653}
+    trackingPositionOffset: {x: 0, y: -0.6, z: -0.2}
+    trackingRotationOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &9182818705620621653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2250444567716750070, guid: 194969bfc45f1c04fa2e59a720fdc796, type: 3}
