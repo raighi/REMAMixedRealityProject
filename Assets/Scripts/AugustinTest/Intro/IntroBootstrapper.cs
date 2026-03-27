@@ -36,4 +36,4 @@ public class IntroBootstrapper : MonoBehaviour
         introController = new IntroController(textIntroModel, backgroundIntroView, universalConnectionManager);
         introInteractions.Initialize(introController);
     }
-}*/
+}

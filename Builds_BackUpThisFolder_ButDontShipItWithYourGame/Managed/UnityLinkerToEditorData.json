@@ -102,9 +102,7 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [
-              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -123,35 +121,15 @@
             "icon": null
           },
           {
-            "name": "AudioMixer",
-            "scenes": [
-              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "AudioMixerGroup",
-            "scenes": [
-              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "AudioMixerSnapshot",
-            "scenes": [
-              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioResource",
-            "scenes": [
-              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -1078,7 +1056,9 @@
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/RaphTest/LobbyScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
