@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class EndingBootstrapper : MonoBehaviour
 {
     private EndingController endingController;
@@ -20,4 +20,4 @@ public class EndingBootstrapper : MonoBehaviour
         endingController = new EndingController(textEndingModel, backgroundEndingView);
         endingInteractions.Initialize(endingController);
     }
-}
+}*/

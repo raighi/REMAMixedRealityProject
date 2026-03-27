@@ -1,4 +1,4 @@
-
+/*
 [System.Serializable]
 public class TextEndingModel
 {
@@ -34,4 +34,4 @@ public class TextEndingModel
     {
         currentIndex += 1;
     }
-}
+}*/

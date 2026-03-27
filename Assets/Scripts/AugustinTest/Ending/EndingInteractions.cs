@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+/*
 
 public class EndingInteractions : MonoBehaviour
 {
@@ -28,4 +29,4 @@ public class EndingInteractions : MonoBehaviour
     {
         introController.ProceedIntro();
     }
-}
+}*/

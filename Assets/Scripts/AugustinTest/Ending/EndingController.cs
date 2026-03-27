@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class EndingController
 {
     private BackgroundEndingView backgroundIntroView;
@@ -30,4 +30,4 @@ public class EndingController
             Debug.Log("Fin du jeu");
         }
     }
-}
+}*/

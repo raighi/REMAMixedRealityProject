@@ -1,5 +1,4 @@
-using UnityEngine;
-
+using UnityEngine;/*
 public class IntroBootstrapper : MonoBehaviour
 {
     private IntroController introController;
@@ -20,4 +19,4 @@ public class IntroBootstrapper : MonoBehaviour
         introController = new IntroController(textIntroModel, backgroundIntroView);
         introInteractions.Initialize(introController);
     }
-}
+}*/

@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 5914450890513427493}
   - component: {fileID: 4582710763027820913}
   - component: {fileID: 12448049277048595}
+  - component: {fileID: 5090561819428101782}
   m_Layer: 0
   m_Name: ARPlayerPrefabDef
   m_TagString: Untagged
@@ -554,7 +555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3474367725775669280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fea97bace09ee54cbb5f75240eff84b, type: 3}
+  m_Script: {fileID: 11500000, guid: 406287b9fae4c49bbbfd98298e049b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fr.ImtAtlantique.CEXIHA.Core.CalibrationManager
   objectToCalibrate: {fileID: 0}
@@ -593,6 +594,21 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &5090561819428101782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474367725775669280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f8068ebbad7f84391373752aaef209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Colocation.Controllers.ARLocomotionController
+  ShowTopMostFoldoutHeaderGroup: 1
+  config: {fileID: 11400000, guid: b743a2d644e726a4a89a033b64098d50, type: 2}
+  cameraTransform: {fileID: 7152367410355363143}
 --- !u!1 &3658623604173555646
 GameObject:
   m_ObjectHideFlags: 0

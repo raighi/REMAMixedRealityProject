@@ -1,4 +1,4 @@
-
+/*
 [System.Serializable]
 public class TextIntroModel
 {
@@ -34,4 +34,4 @@ public class TextIntroModel
     {
         currentIndex += 1;
     }
-}
+}*/

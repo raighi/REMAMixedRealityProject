@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class IntroController
 {
     private BackgroundIntroView backgroundIntroView;
@@ -49,4 +49,4 @@ public class IntroController
             RefreshView();
         }
     }
-}
+}*/

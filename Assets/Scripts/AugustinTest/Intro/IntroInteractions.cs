@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+/*
 public class IntroInteractions : MonoBehaviour
 {
     [Header("UI Component")]
@@ -36,4 +36,4 @@ public class IntroInteractions : MonoBehaviour
     {
         introController.GoBackIntro();
     }
-}
+}*/

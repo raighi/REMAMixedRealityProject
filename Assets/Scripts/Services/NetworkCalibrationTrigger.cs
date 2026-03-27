@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using Unity.Netcode;
 using Fr.ImtAtlantique.CEXIHA.Core; 
-
+using Colocation.Services;
 public class NetworkCalibrationTrigger : NetworkBehaviour
 {
     private CalibrationManager CalibrationManager;
@@ -70,6 +70,11 @@ public class NetworkCalibrationTrigger : NetworkBehaviour
         CalibrationManager.Calibrate();
 
         isCalibrated = true; 
+        // Notifier le service de colocation
+        if (ColocationModeService.Instance != null)
+            {
+                ColocationModeService.Instance.SetLocalCalibrated(true);
+            }
     }
 
     public override void OnNetworkDespawn()
