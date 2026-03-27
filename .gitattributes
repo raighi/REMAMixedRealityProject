@@ -1,0 +1,6 @@
+*.asset merge=binary
+*.unity merge=binary
+*.prefab merge=binary
+*.mat merge=binary
+*.controller merge=binary
+*.anim merge=binary
