@@ -239,6 +239,14 @@
             "icon": null
           },
           {
+            "name": "Halo",
+            "scenes": [
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "InputManager",
             "scenes": [],
             "dependencyType": 1,
@@ -262,7 +270,8 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/RaphTest/LobbyScene.unity"
+              "Assets/Scenes/RaphTest/LobbyScene.unity",
+              "Assets/Scenes/RaphTest/TESTCO\u002BVR.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1681,12 +1690,6 @@
       {
         "name": "UnityConnect",
         "dependencies": [
-          {
-            "name": "UnityConnectSettings",
-            "scenes": [],
-            "dependencyType": 1,
-            "icon": null
-          },
           {
             "name": "Required by CrashReporting Module",
             "scenes": [],
