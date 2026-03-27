@@ -37,7 +37,7 @@ public class LobbyUI : MonoBehaviour
 
     private void LoadGameScene()
     {
-        bool isAR = SystemInfo.deviceType == DeviceType.Handheld;
+        bool isAR = SystemInfo.deviceType == UnityEngine.DeviceType.Handheld;
         string sceneName = isAR ? AR_SCENE : VR_SCENE;
 
         NetworkManager.Singleton.SceneManager.LoadScene(
