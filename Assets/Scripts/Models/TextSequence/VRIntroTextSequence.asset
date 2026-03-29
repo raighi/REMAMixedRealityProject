@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6db81419d7a1b4da3a28b9900e9faa, type: 3}
+  m_Name: VRIntroTextSequence
+  m_EditorClassIdentifier: Assembly-CSharp::TextSequence
+  messages:
+  - "Bonjour et bienvenue dans notre exp\xE9rience de r\xE9alit\xE9 mixte avanc\xE9e."
+  - "Vous avez lanc\xE9 l\u2019exp\xE9rience en mode VR. \xC0 ce titre, vous devriez
+    \xEAtre \xE9quip\xE9 d\u2019un casque de r\xE9alit\xE9 virtuelle. "
+  - "Avant de commencer, assurez\u2011vous d\u2019\xEAtre dans un espace d\xE9gag\xE9,
+    aux c\xF4t\xE9s de votre partenaire, et placez\u2011vous au centre de votre environnement."
+  - "Pour vous d\xE9placer, marchez naturellement et orientez votre t\xEAte autour
+    de vous. En revanche, pour changer de zone dans le donjon, vous devrez utiliser
+    la t\xE9l\xE9portation gr\xE2ce aux contr\xF4leurs."
+  - "Lorsque vous serez connect\xE9s, attendez que votre partenaire calibre correctement
+    votre position \xE0 l\u2019aide du marqueur situ\xE9 sur votre casque."
+  - "Le jeu va maintenant d\xE9marrer. Une courte introduction sc\xE9naris\xE9e va
+    vous \xEAtre pr\xE9sent\xE9e. Une fois celle-ci termin\xE9e, vous serez connect\xE9
+    avec votre partenaire. Bonne aventure."
+  - "Vous \xEAtes un chevalier captur\xE9 et enferm\xE9 dans un donjon. Vous ignorez
+    comment vous \xEAtes arriv\xE9 ici, mais une chose est certaine : vous devez
+    trouver un moyen de sortir avant qu\u2019il ne soit trop tard."
+  - "Dans votre malheur, vous d\xE9couvrez que vous n\u2019\xEAtes pas totalement
+    seul. Une pr\xE9sence \xE9th\xE9r\xE9e se manifeste : un esprit, qui semble anim\xE9
+    d\u2019une \xE9trange bienveillance \xE0 votre \xE9gard."
+  - "Alors que vous prenez vos rep\xE8res dans ce lieu sombre, votre regard se pose
+    sur une immense porte, visiblement la seule issue possible. C\u2019est alors
+    qu\u2019un murmure traverse l\u2019air"
+  - "\xAB D\xE9verrouillez les trois sceaux\u2026 R\xE9solvez les \xE9nigmes dissimul\xE9es
+    dans les salles du donjon\u2026 \xBB"
+  - "Votre r\xF4le est clair : r\xE9soudre les \xE9nigmes gr\xE2ce \xE0 l\u2019aide
+    apport\xE9e par l\u2019esprit, d\xE9verrouiller la porte et quitter cet endroit."

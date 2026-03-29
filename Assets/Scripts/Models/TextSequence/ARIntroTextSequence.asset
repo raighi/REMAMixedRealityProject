@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6db81419d7a1b4da3a28b9900e9faa, type: 3}
+  m_Name: ARIntroTextSequence
+  m_EditorClassIdentifier: Assembly-CSharp::TextSequence
+  messages:
+  - "Bonjour et bienvenue dans notre exp\xE9rience de r\xE9alit\xE9 mixte avanc\xE9e."
+  - "Vous avez lanc\xE9 l\u2019exp\xE9rience en mode AR. \xC0 ce titre, vous devriez
+    \xEAtre muni d\u2019un t\xE9l\xE9phone mobile."
+  - "Avant de commencer, assurez\u2011vous d\u2019\xEAtre dans un espace d\xE9gag\xE9,
+    aux c\xF4t\xE9s de votre partenaire, et placez\u2011vous face \xE0 lui."
+  - "Pour vous d\xE9placer, explorez votre environnement en tenant votre appareil
+    devant vous et en l\u2019orientant afin d\u2019observer les \xE9l\xE9ments en
+    r\xE9alit\xE9 augment\xE9e."
+  - "Lorsque vous serez connect\xE9s, vous devrez effectuer un calibrage : utilisez
+    la cam\xE9ra de votre t\xE9l\xE9phone pour scanner le marqueur plac\xE9 sur le
+    casque de votre partenaire."
+  - "Le jeu va maintenant d\xE9marrer. Une courte introduction sc\xE9naris\xE9e va
+    vous \xEAtre pr\xE9sent\xE9e. Une fois celle-ci termin\xE9e, vous serez connect\xE9
+    avec votre partenaire. Bonne aventure."
+  - "Vous \xEAtes le fant\xF4me d\u2019une personne autrefois emprisonn\xE9e dans
+    ce donjon.\r\nAvec le temps, vous avez fini par p\xE9rir entre ces murs, et votre
+    m\xE9moire s\u2019est effac\xE9e peu \xE0 peu, jusqu\u2019\xE0 ne plus savoir
+    qui vous \xE9tiez. Depuis, vous errez sans fin dans ces lieux sombres et silencieux."
+  - "Mais aujourd\u2019hui, quelque chose change. Un nouveau prisonnier vient d\u2019\xEAtre
+    jet\xE9 dans le donjon : un chevalier, perdu et vuln\xE9rable. D\xE8s l\u2019instant
+    o\xF9 vous percevez sa pr\xE9sence, une profonde sympathie vous envahit. Vous
+    vous jurez de ne pas le laisser subir le m\xEAme sort tragique que vous."
+  - "Alors que vous observez la sc\xE8ne, un fragment de souvenir remonte \xE0 la
+    surface\u2026 un murmure lointain, entendu jadis lorsque vous \xE9tiez encore
+    vivant :"
+  - "\xAB D\xE9verrouillez les trois sceaux\u2026 R\xE9solvez les \xE9nigmes dissimul\xE9es
+    dans les salles du donjon\u2026 \xBB"
+  - "Votre r\xF4le est clair : guider le chevalier et l\u2019aider \xE0 r\xE9soudre
+    les \xE9nigmes afin qu\u2019il puisse s\u2019\xE9chapper."
